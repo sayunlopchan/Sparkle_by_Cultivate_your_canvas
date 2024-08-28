@@ -39,14 +39,14 @@ const FAQ = () => {
   return (
     <>
       <div className="p-10 space-y-5 bg-cover bg-center lg:h-[600px]  relative overflow-hidden">
-        <h1 className="font-bold text-2xl py-5 animation-disapp">FAQs for Parents</h1>
+        <h1 className="font-bold text-2xl py-5">FAQs for Parents</h1>
 
         <img src={littleGirl} alt="little girl" className="absolute h-[400px] -right-20 bottom-0 -z-10 max-md:hidden" />
 
         {Faqdata.map((item, idx) => (
           <div
             key={idx}
-            className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-colors duration-500 animation-disapp ${openFAQIndex === idx ? "bg-orange-500 text-white" : ""
+            className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-colors duration-500 ${openFAQIndex === idx ? "bg-orange-500 text-white" : ""
               }`}
             onClick={() => handleFAQ(idx)}
           >

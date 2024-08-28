@@ -72,7 +72,7 @@ const Slider = () => {
   }, [isTransitioning]); // Add isTransitioning as a dependency
 
   return (
-    <div className='slider-container'>
+    <div className='slider-container max-md:h-[90vh]'>
       {/* header */}
       <header className='slider-header'>
         <SliderHeader />

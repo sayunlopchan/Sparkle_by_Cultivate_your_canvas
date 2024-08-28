@@ -76,7 +76,7 @@ const GridGallery_1 = () => {
 
             <li className='animation-disapp'><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
 
-            <li><img src={splashOrange} alt="red-splash" className='size-[50px] animation-disapp' />Dance at Sparkle Kids Academy.</li>
+            <li className='animation-disapp'><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
 
             <li className='animation-disapp'><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
           </ul>
