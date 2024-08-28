@@ -63,7 +63,7 @@ const Footer = () => {
               <li className="contact-link">
                 <BsFillTelephoneForwardFill size={20} />
                 <a href="tel:9857049590">9857049590</a>
-                <a href="tel:01-0000-0000">01-5409722</a>
+                <a href="tel:01-5409722">01-5409722</a>
               </li>
             </ul>
 

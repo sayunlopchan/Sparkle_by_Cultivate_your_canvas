@@ -34,11 +34,7 @@ const App = () => {
         { path: 'contact', element: <Contact /> },
 
 
-        // page-page
-        { path: 'art', element: <Art /> },
-        { path: 'yoga', element: <Yoga /> },
-        { path: 'publicSpeaking', element: <PublicSpeaking /> },
-        { path: 'dance', element: <Dance /> },
+        // nested-page
 
       ],
     },

@@ -96,6 +96,12 @@ const Root_Drawer = () => {
             to="/contact"
             className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
           >
+            Addmission form
+          </NavLink>
+          <NavLink
+            to="/form"
+            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
+          >
             Contact us
           </NavLink>
         </div>
