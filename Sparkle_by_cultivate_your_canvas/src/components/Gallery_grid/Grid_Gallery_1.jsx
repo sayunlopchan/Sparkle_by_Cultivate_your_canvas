@@ -58,27 +58,27 @@ const GridGallery_1 = () => {
       </div>
 
       {/* text */}
-      <div className='grid-gallery-1-container-box'>
+      <div className='grid-gallery-1-container-box '>
 
         <div className='w-full space-y-5'>
 
-          <h1 className='text-red-500 font-[500] text-4xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque.</h1>
+          <h1 className='text-red-500 font-[500] text-4xl animation-disapp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque.</h1>
 
-          <p className='p-text italic'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique nisi harum! Eaque quaerat, necessitatibus facilis saepe et est tenetur.</p>
+          <p className='p-text italic animation-disapp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique nisi harum! Eaque quaerat, necessitatibus facilis saepe et est tenetur.</p>
 
-          <p className='p-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className='p-text animation-disapp'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
           <ul className='card-ul'>
 
-            <li><img src={splashRed} alt="red-splash" className='size-[50px] animation-disapp' />Art at Sparkle Kids Academy.</li>
+            <li className='animation-disapp'><img src={splashRed} alt="red-splash" className='size-[50px]' />Art at Sparkle Kids Academy.</li>
 
-            <li><img src={splashGreen} alt="red-splash" className='size-[50px] animation-disapp' />Yoga at Sparkle Kids Academy.</li>
+            <li className='animation-disapp'><img src={splashGreen} alt="red-splash" className='size-[50px]' />Yoga at Sparkle Kids Academy.</li>
 
-            <li><img src={splashYelow} alt="red-splash" className='size-[50px] animation-disapp' />Public speaking at Sparkle Kids Academy.</li>
+            <li className='animation-disapp'><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
 
-            <li><img src={splashOrange} alt="red-splash" className='size-[50px] animation-disapp' />Dance at Sparkle Kids Academy.</li>
+            <li><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
 
-            <li><img src={splashPink} alt="red-splash" className='size-[50px] animation-disapp' />Personality development at Sparkle Kids Academy.</li>
+            <li className='animation-disapp'><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
           </ul>
         </div>
       </div>

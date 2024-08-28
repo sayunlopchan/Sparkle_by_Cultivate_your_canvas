@@ -10,21 +10,21 @@ const Introduction = () => {
       <div className=' w-full relative'>
 
         {/* headinng */}
-        <h1 className=' text-[30px] lg:text-[50px] font-bold animation-disapp'>Introduction</h1>
+        <h1 className=' text-[30px] lg:text-[50px] font-bold '>Introduction</h1>
 
         {/* stickers */}
         <img
           src={candle2}
           alt="candle"
-          className='absolute h-[80px] right-0 bottom-0 md:right-[26%]animation-disapp' />
+          className='absolute h-[80px] right-0 bottom-0 md:right-[26%]' />
         <img
           src={candle3}
           alt="candle"
-          className='absolute h-[80px] left-0 -bottom-0 md:left-[26%]animation-disapp' />
+          className='absolute h-[80px] left-0 -bottom-0 md:left-[26%]' />
       </div>
       {/* text */}
       <div>
-        <p className=' max-sm:text-sm text-gray-700 animation-disapp'>
+        <p className=' max-sm:text-sm text-gray-700'>
           <span>**</span>
           <span className="bg-gradient-to-r from-red-500 via-green-500 to-yellow-500 bg-clip-text text-transparent">
             <strong>Welcome to Sparkle by Cultivate Your Canvas</strong>
