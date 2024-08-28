@@ -70,7 +70,7 @@ const Root_Drawer = () => {
         </div>
 
         {/* Sidebar content here */}
-        <div className=''>
+        <div >
           <NavLink
             to="/"
             className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"

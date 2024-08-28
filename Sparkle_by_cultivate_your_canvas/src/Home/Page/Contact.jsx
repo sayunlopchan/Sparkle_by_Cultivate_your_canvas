@@ -76,7 +76,7 @@ const Contact = () => {
           </iframe>
         </div>
         {/* Contact from */}
-        <div className="py-10 my-10">
+        <div className="py-10 my-10 animation-disapp">
           <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
             <form action="#" method="POST" className="space-y-4">
