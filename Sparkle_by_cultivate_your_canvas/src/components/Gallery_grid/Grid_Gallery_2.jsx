@@ -9,7 +9,7 @@ import img5 from '../../assets/image/fun-activities/dance/dance4.jpg'
 
 // texture images
 import taxture from '../../assets/texture/bg-texture/bg-trangle-pattern-texture.jpg'
-import CarouselSlider from '../CarouselSlider/CarouselSlider';
+
 
 
 const GridGallery_2 = () => {

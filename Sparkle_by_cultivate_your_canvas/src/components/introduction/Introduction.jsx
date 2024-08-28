@@ -1,7 +1,7 @@
 import React from 'react'
-import candle from '../../assets/texture/useableImages/burning-candle.png'
-import candle2 from '../../assets/texture/useableImages/burning-candle2.png'
 
+// sticker img
+import candle2 from '../../assets/texture/useableImages/burning-candle2.png'
 import candle3 from '../../assets/texture/useableImages/burning-candle3.png'
 
 const Introduction = () => {
@@ -10,21 +10,21 @@ const Introduction = () => {
       <div className=' w-full relative'>
 
         {/* headinng */}
-        <h1 className=' text-[30px] lg:text-[50px] font-bold '>Introduction</h1>
+        <h1 className=' text-[30px] lg:text-[50px] font-bold animation-disapp'>Introduction</h1>
 
         {/* stickers */}
         <img
           src={candle2}
           alt="candle"
-          className='absolute h-[80px] right-0 bottom-0 md:right-[26%]' />
+          className='absolute h-[80px] right-0 bottom-0 md:right-[26%]animation-disapp' />
         <img
           src={candle3}
           alt="candle"
-          className='absolute h-[80px] left-0 -bottom-0 md:left-[26%]' />
+          className='absolute h-[80px] left-0 -bottom-0 md:left-[26%]animation-disapp' />
       </div>
       {/* text */}
       <div>
-        <p className=' max-sm:text-sm text-gray-700'>
+        <p className=' max-sm:text-sm text-gray-700 animation-disapp'>
           <span>**</span>
           <span className="bg-gradient-to-r from-red-500 via-green-500 to-yellow-500 bg-clip-text text-transparent">
             <strong>Welcome to Sparkle by Cultivate Your Canvas</strong>

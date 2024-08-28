@@ -70,15 +70,15 @@ const GridGallery_1 = () => {
 
           <ul className='card-ul'>
 
-            <li><img src={splashRed} alt="red-splash" className='size-[50px]' />Art at Sparkle Kids Academy.</li>
+            <li><img src={splashRed} alt="red-splash" className='size-[50px] animation-disapp' />Art at Sparkle Kids Academy.</li>
 
-            <li><img src={splashGreen} alt="red-splash" className='size-[50px]' />Yoga at Sparkle Kids Academy.</li>
+            <li><img src={splashGreen} alt="red-splash" className='size-[50px] animation-disapp' />Yoga at Sparkle Kids Academy.</li>
 
-            <li><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
+            <li><img src={splashYelow} alt="red-splash" className='size-[50px] animation-disapp' />Public speaking at Sparkle Kids Academy.</li>
 
-            <li><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
+            <li><img src={splashOrange} alt="red-splash" className='size-[50px] animation-disapp' />Dance at Sparkle Kids Academy.</li>
 
-            <li><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
+            <li><img src={splashPink} alt="red-splash" className='size-[50px] animation-disapp' />Personality development at Sparkle Kids Academy.</li>
           </ul>
         </div>
       </div>
