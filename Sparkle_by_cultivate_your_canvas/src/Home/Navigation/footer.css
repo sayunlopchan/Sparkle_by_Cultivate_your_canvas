@@ -1,0 +1,124 @@
+/* Headings and p */
+.quote {
+  @apply font-bold;
+}
+
+.footer-heading {
+  @apply font-semibold text-[20px];
+}
+
+/* footer */
+.footer-container {
+  @apply text-white bg-[#ff7f00] py-5;
+}
+
+.footer-content-container {
+  @apply px-10;
+}
+
+.footer-content {
+  @apply w-full grid grid-cols-12 place-items-start gap-[10px];
+}
+
+/* py all content-item */
+.footer-content-item {
+  @apply py-5 space-y-5;
+}
+
+.footer-content-item:nth-child(1) {
+  @apply col-span-12 md:col-span-6 lg:col-span-3;
+}
+.footer-content-item:nth-child(2) {
+  @apply col-span-12 md:col-span-6 lg:col-span-2;
+}
+.footer-content-item:nth-child(3) {
+  @apply col-span-12 md:col-span-6 lg:col-span-3;
+}
+.footer-content-item:nth-child(4) {
+  @apply col-span-12 md:col-span-6 lg:col-span-4 lg:px-10;
+}
+
+.footer-icon-container {
+  @apply flex gap-3;
+}
+
+.footer-contacts-container .contact-link {
+  @apply flex gap-[10px] space-y-3 items-center;
+}
+
+.footer-icon-container a,
+.footer-contacts-container li a,
+.footer-content-item .footer-link-container li a {
+  transition: color 0.3s;
+}
+
+.footer-icon-container a:hover,
+.footer-contacts-container li a:hover {
+  @apply text-[#c8c8c8];
+}
+
+/* Quick links */
+.footer-Qlinks-container {
+  /* @apply col-span-2; */
+}
+.footer-Qlinks-container .footer-link-container li a:hover {
+  @apply text-[#c8c8c8];
+}
+
+.footer-link-container {
+  @apply space-y-3;
+}
+
+/* footer-map */
+
+.footer-map {
+  @apply h-full max-md:w-full;
+}
+
+/* footer footer*/
+
+.footer-footer {
+  @apply w-full pt-5 flex justify-between items-center flex-col md:flex-row;
+}
+
+.footer-footer .creator-container {
+  @apply flex flex-col lg:flex-row justify-center items-center gap-4;
+}
+
+.footer-footer .creator-container h2 {
+  @apply text-xl font-semibold;
+}
+
+.creator-logo {
+  @apply w-[180px];
+}
+
+.license {
+  @apply text-sm md:text-[20px];
+}
+
+.newsletter-p {
+  @apply text-[12px] md:text-sm;
+}
+
+.newsletter-container {
+  @apply space-y-4;
+}
+
+.newsletter-container form {
+  @apply space-x-2 inline;
+}
+.newsletter-container form input {
+  @apply px-1 text-gray-600 w-[60%];
+}
+.newsletter-container form .btn-container {
+  @apply text-gray-600 inline;
+}
+
+/* btn */
+.btn-container button {
+  @apply px-2 py-1 border-2 text-white border-white transition-[0.9s];
+}
+.btn-container button:hover {
+  @apply backdrop-blur-sm bg-white/30;
+}

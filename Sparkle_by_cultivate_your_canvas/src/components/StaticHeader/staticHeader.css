@@ -1,0 +1,42 @@
+.static-header {
+  font-size: 20px;
+  transition: 0.2s;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  color: black;
+}
+.slider-header {
+  font-size: 20px;
+  transition: 0.2s;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+}
+
+.static-links {
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.static-links {
+  @apply max-lg:hidden;
+}
+
+.static-navlink-link {
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.static-navlink-link:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: #ffa500;
+  padding: 10px 30px;
+}

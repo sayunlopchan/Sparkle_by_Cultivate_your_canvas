@@ -1,0 +1,31 @@
+.root-header {
+  font-size: 20px;
+  position: sticky;
+  z-index: 10000;
+  top: -100px;
+  margin-top: -80px;
+  transition: 0.2s;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(65, 62, 62);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  padding: 0px 40px;
+}
+
+.root-navlink-link {
+  padding: 10px 20px;
+  z-index: 20;
+  position: relative;
+  transition: 0.3s;
+}
+
+.root-navlink-link:hover {
+  color: white;
+  border: 2px solid white;
+  background-color: #ffa500;
+  padding: 10px 30px;
+}
