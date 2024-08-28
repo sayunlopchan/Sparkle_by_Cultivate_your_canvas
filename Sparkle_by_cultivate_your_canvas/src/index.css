@@ -92,7 +92,7 @@
 
 /* animation */
 
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -106,4 +106,4 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+} */
