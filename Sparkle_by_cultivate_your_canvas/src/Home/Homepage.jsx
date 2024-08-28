@@ -24,6 +24,7 @@ const Homepage = () => {
     <div className='space-y-20 lg:space-y-28'>
       <Slider />
       <GridGallery_1 />
+      <Introduction />
       <ChairWomenMessage />
       <Counter_Ui />
       <GridGallery_2 />

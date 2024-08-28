@@ -81,7 +81,9 @@ const WhyChooseUs = () => {
 
         {
           data.map((item, idx) => (
-            <div className="w-[340px] h-[400px] rounded-lg shadow-white shadow-md flex flex-col items-center p-3 space-y-5 text-center bg-white ">
+            <div
+              key={idx}
+              className="w-[340px] h-[400px] rounded-lg shadow-white shadow-md flex flex-col items-center p-3 space-y-5 text-center bg-white ">
               <img
                 src={item.image}
                 alt="img"

@@ -30,27 +30,27 @@ const GridGallery_1 = () => {
       {/* img */}
       <div className='grid-gallery-1-container-box'>
         <div
-          className='grid-gallery-imgs-grid-box '
+          className='grid-gallery-imgs-grid-box'
           style={{ backgroundImage: `url(${taxture})` }}
         >
 
           <div
-            className="grid-img "
+            className="grid-img animation-disapp"
             style={{ backgroundImage: `url(${img1})` }}
           />
 
           <div
-            className="grid-img "
+            className="grid-img animation-disapp"
             style={{ backgroundImage: `url(${img2})` }}
           />
 
           <div
-            className="grid-img "
+            className="grid-img animation-disapp"
             style={{ backgroundImage: `url(${img3})` }}
           />
 
           <div
-            className="grid-img "
+            className="grid-img animation-disapp"
             style={{ backgroundImage: `url(${img4})` }}
           />
 
