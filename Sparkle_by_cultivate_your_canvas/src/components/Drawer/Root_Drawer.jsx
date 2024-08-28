@@ -93,13 +93,13 @@ const Root_Drawer = () => {
           </NavLink>
 
           <NavLink
-            to="/contact"
+            to="/form"
             className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
           >
             Addmission form
           </NavLink>
           <NavLink
-            to="/form"
+            to="/contact"
             className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
           >
             Contact us

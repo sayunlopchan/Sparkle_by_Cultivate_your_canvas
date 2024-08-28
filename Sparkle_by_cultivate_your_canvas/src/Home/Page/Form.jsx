@@ -124,8 +124,8 @@ const Form = () => {
         <div>
           <ul className='space-y-10'>
             {/* process 1 */}
-            <li>
-              <div className='flex items-center gap-4 animation-disapp'>
+            <li className='animation-disapp'>
+              <div className='flex items-center gap-4 '>
                 <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>1</div>
                 <h1 className='text-lg font-bold text-orange-400'>Inquire</h1>
               </div>
@@ -134,8 +134,8 @@ const Form = () => {
               </div>
             </li>
             {/* process 2 */}
-            <li>
-              <div className='flex items-center gap-4 animation-disapp'>
+            <li className='animation-disapp'>
+              <div className='flex items-center gap-4'>
                 <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>2</div>
                 <h1 className='text-lg font-bold text-orange-400'>Meeting Interview</h1>
               </div>
@@ -144,8 +144,8 @@ const Form = () => {
               </div>
             </li>
             {/* process 3 */}
-            <li>
-              <div className='flex items-center gap-4 animation-disapp'>
+            <li className='animation-disapp'>
+              <div className='flex items-center gap-4'>
                 <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>3</div>
                 <h1 className='text-lg font-bold text-orange-400'>Pre-evaluation</h1>
               </div>
@@ -154,8 +154,8 @@ const Form = () => {
               </div>
             </li>
             {/* process 4 */}
-            <li>
-              <div className='flex items-center gap-4 animation-disapp'>
+            <li className='animation-disapp'>
+              <div className='flex items-center gap-4'>
                 <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>4</div>
                 <h1 className='text-lg font-bold text-orange-400'>Enrollment</h1>
               </div>
