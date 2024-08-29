@@ -3,6 +3,7 @@ import StaticHeader from '../../components/StaticHeader/StaticHeader'
 
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { IoPhonePortrait } from "react-icons/io5";
+import AnimatedComponent from '../../components/Animation/AnimatedComponent';
 
 const Form = () => {
   return (
@@ -110,16 +111,26 @@ const Form = () => {
       {/* process */}
       <div className='grid grid-cols-1 lg:grid-cols-2 p-10 space-y-10'>
         <div className='space-y-5'>
-          <h1 className='text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl animation-disapp'>
-            Admission Process for Incoming Students
-          </h1>
-          <h2 className='font-semibold text-[15px] lg:text-xl animation-disapp'>if you prefer immediate answers</h2>
+          <AnimatedComponent>
+
+            <h1 className='text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl animation-disapp'>
+              Admission Process for Incoming Students
+            </h1>
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <h2 className='font-semibold text-[15px] lg:text-xl animation-disapp'>if you prefer immediate answers</h2>
+          </AnimatedComponent>
           {/* icons */}
           <div className='space-y-2 '>
-            <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
-              <IoPhonePortrait size={25} /> 9857049590</p>
-            <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
-              <BsFillTelephoneForwardFill size={25} /> 01-5409722</p>
+            <AnimatedComponent>
+              <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
+                <IoPhonePortrait size={25} /> 9857049590
+              </p>
+            </AnimatedComponent>
+            <AnimatedComponent>
+              <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
+                <BsFillTelephoneForwardFill size={25} /> 01-5409722</p>
+            </AnimatedComponent>
 
           </div>
         </div>
@@ -127,43 +138,51 @@ const Form = () => {
           <ul className='space-y-10'>
             {/* process 1 */}
             <li className='animation-disapp'>
-              <div className='flex items-center gap-4 '>
-                <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>1</div>
-                <h1 className='text-lg font-bold text-orange-400'>Inquire</h1>
-              </div>
-              <div className='ml-20 text-sm font-semibold'>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
-              </div>
+              <AnimatedComponent>
+                <div className='flex items-center gap-4 '>
+                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>1</div>
+                  <h1 className='text-lg font-bold text-orange-400'>Inquire</h1>
+                </div>
+                <div className='ml-20 text-sm font-semibold'>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
+                </div>
+              </AnimatedComponent>
             </li>
             {/* process 2 */}
             <li className='animation-disapp'>
-              <div className='flex items-center gap-4'>
-                <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>2</div>
-                <h1 className='text-lg font-bold text-orange-400'>Meeting Interview</h1>
-              </div>
-              <div className='ml-20 text-sm font-semibold'>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
-              </div>
+              <AnimatedComponent>
+                <div className='flex items-center gap-4'>
+                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>2</div>
+                  <h1 className='text-lg font-bold text-orange-400'>Meeting Interview</h1>
+                </div>
+                <div className='ml-20 text-sm font-semibold'>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
+                </div>
+              </AnimatedComponent>
             </li>
             {/* process 3 */}
             <li className='animation-disapp'>
-              <div className='flex items-center gap-4'>
-                <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>3</div>
-                <h1 className='text-lg font-bold text-orange-400'>Pre-evaluation</h1>
-              </div>
-              <div className='ml-20 text-sm font-semibold'>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
-              </div>
+              <AnimatedComponent>
+                <div className='flex items-center gap-4'>
+                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>3</div>
+                  <h1 className='text-lg font-bold text-orange-400'>Pre-evaluation</h1>
+                </div>
+                <div className='ml-20 text-sm font-semibold'>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
+                </div>
+              </AnimatedComponent>
             </li>
             {/* process 4 */}
             <li className='animation-disapp'>
-              <div className='flex items-center gap-4'>
-                <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>4</div>
-                <h1 className='text-lg font-bold text-orange-400'>Enrollment</h1>
-              </div>
-              <div className='ml-20 text-sm font-semibold'>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
-              </div>
+              <AnimatedComponent>
+                <div className='flex items-center gap-4'>
+                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>4</div>
+                  <h1 className='text-lg font-bold text-orange-400'>Enrollment</h1>
+                </div>
+                <div className='ml-20 text-sm font-semibold'>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
+                </div>
+              </AnimatedComponent>
             </li>
           </ul>
         </div>

@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
       </div>
 
       {/* gradient bg */}
-      <div className="flex flex-wrap justify-center items-center py-10 gap-10 bg-gradient-to-b from-yellow-500 to-orange-500 ">
+      <div className="flex flex-wrap justify-center items-center py-10 gap-10 bg-gradient-to-b from-yellow-500 to-orange-500 overflow-hidden">
 
         {
           data.map((item, idx) => (
