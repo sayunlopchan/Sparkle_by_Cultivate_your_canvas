@@ -47,6 +47,14 @@ const SliderHeader = () => {
           >
             Career
           </NavLink>
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) =>
+              `static-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+            }
+          >
+            Gallary
+          </NavLink>
         </nav>
 
         <div className='static-contact'>

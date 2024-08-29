@@ -2,6 +2,7 @@ import React from 'react'
 import StaticHeader from '../../components/StaticHeader/StaticHeader'
 
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
+import { IoPhonePortrait } from "react-icons/io5";
 
 const Form = () => {
   return (
@@ -39,11 +40,16 @@ const Form = () => {
             <label className="block text-gray-700 text-sm font-bold mb-2" for="full_name">Full Name</label>
             <input type="text" id="full_name" name="full_name" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
           </div>
+          {/* <!-- Parents Name --> */}
+          <div className="mb-4">
+            <label className="block text-gray-700 text-sm font-bold mb-2" for="parent_name">Parent Name</label>
+            <input type="text" id="parent_name" name="parent_name" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+          </div>
 
           {/* <!-- Email Address --> */}
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" for="email">Email Address</label>
-            <input type="email" id="email" name="email" className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+            <input type="email" id="email" name="email" placeholder='optional' className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
 
           {/* <!-- Phone Number --> */}
@@ -83,10 +89,6 @@ const Form = () => {
                 <input type="radio" name="gender" value="female" className="form-radio h-4 w-4 text-blue-600" required />
                 <span className="ml-2">Female</span>
               </label>
-              <label className="inline-flex items-center">
-                <input type="radio" name="gender" value="other" className="form-radio h-4 w-4 text-blue-600" required />
-                <span className="ml-2">Other</span>
-              </label>
             </div>
           </div>
 
@@ -108,15 +110,15 @@ const Form = () => {
       {/* process */}
       <div className='grid grid-cols-1 lg:grid-cols-2 p-10 space-y-10'>
         <div className='space-y-5'>
-          <h1 className='text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl'>
+          <h1 className='text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl animation-disapp'>
             Admission Process for Incoming Students
           </h1>
-          <h2 className='font-semibold text-[15px] lg:text-xl'>if you prefer immediate answers</h2>
+          <h2 className='font-semibold text-[15px] lg:text-xl animation-disapp'>if you prefer immediate answers</h2>
           {/* icons */}
-          <div className='space-y-2'>
-            <p className='flex gap-3'>
-              <BsFillTelephoneForwardFill size={25} /> 9857049590</p>
-            <p className='flex gap-3'>
+          <div className='space-y-2 '>
+            <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
+              <IoPhonePortrait size={25} /> 9857049590</p>
+            <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
               <BsFillTelephoneForwardFill size={25} /> 01-5409722</p>
 
           </div>

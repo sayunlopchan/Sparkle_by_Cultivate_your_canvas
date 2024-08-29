@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './slider.css';
+// header component
+import SliderHeader from '../StaticHeader/SliderHeader';
 
 // images
-import img1 from '../../assets/image/award/award1.jpg';
-import img2 from '../../assets/image/award/award.jpg';
-import img3 from '../../assets/image/award/award3.jpg';
-import img4 from '../../assets/image/award/award4.jpg';
-import SliderHeader from '../StaticHeader/SliderHeader';
+import img1 from '../../assets/image/fun-activities/art/art.jpg';
+import img2 from '../../assets/image/fun-activities/dance/dance1.jpg';
+import img3 from '../../assets/image/fun-activities/yoga/yoga.jpg';
+import img4 from '../../assets/image/fun-activities/yoga/yoga16.jpg';
+
 
 // Slider data
 const SliderData = [
@@ -72,7 +74,7 @@ const Slider = () => {
   }, [isTransitioning]); // Add isTransitioning as a dependency
 
   return (
-    <div className='slider-container max-md:h-[90vh]'>
+    <div className='slider-container '>
       {/* header */}
       <header className='slider-header'>
         <SliderHeader />

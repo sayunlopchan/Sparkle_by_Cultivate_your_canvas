@@ -22,6 +22,11 @@ import splashPink from '../../assets/texture/splash/abstract-pink-watercolor.png
 
 
 import './gallery.css'
+import AnimatedComponent from '../Animation/AnimatedComponent'
+
+// animation
+
+
 
 const GridGallery_1 = () => {
   return (
@@ -35,22 +40,22 @@ const GridGallery_1 = () => {
         >
 
           <div
-            className="grid-img animation-disapp"
+            className="grid-img "
             style={{ backgroundImage: `url(${img1})` }}
           />
 
           <div
-            className="grid-img animation-disapp"
+            className="grid-img "
             style={{ backgroundImage: `url(${img2})` }}
           />
 
           <div
-            className="grid-img animation-disapp"
+            className="grid-img "
             style={{ backgroundImage: `url(${img3})` }}
           />
 
           <div
-            className="grid-img animation-disapp"
+            className="grid-img "
             style={{ backgroundImage: `url(${img4})` }}
           />
 
@@ -62,23 +67,29 @@ const GridGallery_1 = () => {
 
         <div className='w-full space-y-5'>
 
-          <h1 className='text-red-500 font-[500] text-4xl animation-disapp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque.</h1>
 
-          <p className='p-text italic animation-disapp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique nisi harum! Eaque quaerat, necessitatibus facilis saepe et est tenetur.</p>
+          <AnimatedComponent>
 
-          <p className='p-text animation-disapp'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1 className='text-red-500 font-[500] text-4xl '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque.</h1>
+
+            <p className='p-text italic '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique nisi harum! Eaque quaerat, necessitatibus facilis saepe et est tenetur.</p>
+
+            <p className='p-text '>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </AnimatedComponent>
+
 
           <ul className='card-ul'>
 
-            <li className='animation-disapp'><img src={splashRed} alt="red-splash" className='size-[50px]' />Art at Sparkle Kids Academy.</li>
+            <li><img src={splashRed} alt="red-splash" className='size-[50px]' />Art at Sparkle Kids Academy.</li>
 
-            <li className='animation-disapp'><img src={splashGreen} alt="red-splash" className='size-[50px]' />Yoga at Sparkle Kids Academy.</li>
+            <li><img src={splashGreen} alt="red-splash" className='size-[50px]' />Yoga at Sparkle Kids Academy.</li>
 
-            <li className='animation-disapp'><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
+            <li><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
 
-            <li className='animation-disapp'><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
+            <li><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
 
-            <li className='animation-disapp'><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
+            <li><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
+
           </ul>
         </div>
       </div>

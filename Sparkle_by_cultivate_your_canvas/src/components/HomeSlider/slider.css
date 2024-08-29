@@ -1,153 +1,64 @@
 /* Slider Container */
 .slider-container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  @apply relative h-[100vh] w-[100vw] overflow-hidden;
 }
 
 /* Slider Header */
 .slider-header {
-  z-index: 20;
-  width: 100vw;
+  @apply z-20 w-full;
 }
 
 /* Swiper Container */
 .swiper-container {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
+  @apply absolute top-0 h-[100vh] w-full bg-cover bg-center;
   transition: background-position 0.3s ease;
 }
 
 /* Swiper Content */
 .swiper-content {
-  position: absolute;
-  top: 7rem;
-  left: 1.25rem;
-  margin-top: 1.5rem;
-  width: fit-content;
-  overflow: hidden;
-  color: white;
-  z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .swiper-content {
-    top: 10rem;
-    left: 5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .swiper-content {
-    width: 600px;
-  }
+  @apply absolute top-28 md:top-20 left-5 md:left-20 mt-[1.5rem] w-[70%] lg:w-[600px] overflow-hidden text-white z-10;
 }
 
 /* Content Styling */
 .content-h1 {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-@media (min-width: 1024px) {
-  .content-h1 {
-    font-size: 64px;
-  }
+  @apply text-[40px] lg:text-[64px] font-bold;
 }
 
 .content-h2 {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-@media (min-width: 1024px) {
-  .content-h2 {
-    font-size: 48px;
-  }
+  @apply text-[30px] lg:text-[48px] font-semibold;
 }
 
 .content-p {
-  font-size: 18px;
-}
-
-@media (min-width: 768px) {
-  .content-p {
-    font-size: 20px;
-  }
+  @apply text-sm md:text-[20px];
 }
 
 .content-btn {
-  padding: 0.75rem 1rem;
-  border: 2px solid white;
-  border-radius: 0.25rem;
+  @apply py-3 px-4 rounded border-2;
 }
 
 /* Thumbnail Container */
 .thumbnail-container {
-  display: flex;
-  gap: 1.25rem;
-  position: absolute;
-  bottom: 1rem;
-  right: -5rem;
-  z-index: 10;
-}
-
-@media (min-width: 1024px) {
-  .thumbnail-container {
-    right: -2.5rem;
-  }
+  @apply flex flex-col lg:flex-row gap-5 absolute bottom-4 right-2 lg:right-2 z-10;
 }
 
 /* Slider Thumbnails */
 .slider-thumbnail {
-  height: 100px;
-  width: 100px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 1rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
-  transition: all 0.5s ease-in-out;
+  @apply size-[100px] lg:size-[160px] bg-cover bg-center rounded-2xl shadow-2xl transition-all duration-500 ease-in-out;
 }
 
 /* Slider Button Container */
 .slider-btn-container {
-  position: absolute;
-  left: 2.5rem;
-  bottom: 2.5rem;
-  z-index: 10;
-  display: flex;
-  gap: 0.75rem;
-  color: white;
-}
-
-@media (max-width: 640px) {
-  .slider-btn-container {
-    left: 1rem;
-    bottom: 1rem;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0.75rem;
-  }
+  @apply absolute left-10 max-sm:bottom-10 bottom-10 z-10 flex gap-3 text-white;
 }
 
 /* Slider Button */
 .slider-btn {
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.5);
+  @apply h-10 w-10 rounded-full border-2 border-white shadow-lg shadow-gray-600;
 }
 
 /* Active Thumbnail */
 .active-thumbnail {
-  border: 2px solid white;
-  border-radius: 50%;
+  @apply border-2 border-white rounded-full;
 }
 
 /* Slide-in and Slide-out Animations */

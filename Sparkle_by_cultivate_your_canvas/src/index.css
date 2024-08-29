@@ -13,11 +13,19 @@
   list-style: none;
   font-family: "Poppins", sans-serif;
 }
-/* body {
-  max-width: 2560px;
+body {
+  /* max-width: 2560px; */
   min-width: 320px;
   margin: 0px auto;
-} */
+}
+
+/* for header active nav */
+.active-link {
+  color: white;
+  border: 2px solid white;
+  background-color: #ffa500;
+  padding: 10px 30px;
+}
 
 :root {
   --theme-red: #e3191a;
@@ -92,7 +100,7 @@
 
 /* animation */
 
-@keyframes appear {
+/* @keyframes appear {
   from {
     opacity: 0;
     transform: translateX(-100px);
@@ -106,4 +114,4 @@
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-}
+} */

@@ -1,6 +1,6 @@
 import React from "react";
 
-import queriousPeople from "../assets/image/vector/curiosity-people.png";
+
 import ExperiencedInstructors from "../assets/texture/useableImages/ExperiencedInstructors.png";
 
 import HolisticDevelopment from "../assets/texture/useableImages/HolisticDevelopment.png";
@@ -83,7 +83,7 @@ const WhyChooseUs = () => {
           data.map((item, idx) => (
             <div
               key={idx}
-              className="w-[340px] h-[400px] rounded-lg shadow-white shadow-md flex flex-col items-center p-3 space-y-5 text-center bg-white animation-disapp">
+              className="w-[340px] h-[400px] rounded-lg shadow-white shadow-md flex flex-col items-center p-3 space-y-5 text-center bg-white">
               <img
                 src={item.image}
                 alt="img"

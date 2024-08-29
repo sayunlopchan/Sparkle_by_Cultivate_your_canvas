@@ -41,43 +41,51 @@ const Header = () => {
 
       <nav className="space-x-[10px] max-lg:hidden">
         <NavLink
-          to="about"
+          to="/about"
           className={({ isActive }) =>
-            `root-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+            `root-navlink-link ${isActive ? "active-link" : ""}`
           }
         >
           About us
         </NavLink>
 
         <NavLink
-          to="program"
+          to="/program"
           className={({ isActive }) =>
-            `root-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+            `root-navlink-link ${isActive ? "active-link" : ""}`
           }
         >
           Programs
         </NavLink>
         <NavLink
-          to="form"
+          to="/form"
           className={({ isActive }) =>
-            `root-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+            `root-navlink-link ${isActive ? "active-link" : ""}`
           }
         >
           Admission Form
         </NavLink>
         <NavLink
-          to="career"
+          to="/career"
           className={({ isActive }) =>
-            `root-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+            `root-navlink-link ${isActive ? "active-link" : ""}`
           }
         >
           Career
+        </NavLink>
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            `root-navlink-link ${isActive ? "active-link" : ""}`
+          }
+        >
+          Gallery
         </NavLink>
       </nav>
 
       <div>
         <NavLink
-          to="contact"
+          to="/contact"
           className={"bg-[#ff0000] text-white py-[10px] px-[20px] max-lg:hidden"}
         >
           Contact

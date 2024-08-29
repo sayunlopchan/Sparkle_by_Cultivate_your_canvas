@@ -23,14 +23,13 @@ const Introduction = () => {
           className='absolute h-[80px] left-0 -bottom-0 md:left-[26%]' />
       </div>
       {/* text */}
-      <div>
-        <p className=' max-sm:text-sm text-gray-700'>
-          <span>**</span>
+      <div className='space-y-5'>
+        <p className='max-sm:text-sm'><span>**</span>
           <span className="bg-gradient-to-r from-red-500 via-green-500 to-yellow-500 bg-clip-text text-transparent">
             <strong>Welcome to Sparkle by Cultivate Your Canvas</strong>
           </span>
-          <span>**</span>
-          <br />
+          <span>**</span></p>
+        <p className='max-sm:text-sm text-gray-700'>
           At Sparkle, we are committed to creating a nurturing and stimulating environment for children to explore, learn, and grow through a variety of engaging programs and workshops. We believe that every child deserves the opportunity to unlock their full potential, and our mission is to provide a holistic learning experience that focuses on both personal and academic development.
           <br />
           Founded by passionate educators and parents, Sparkle is more than just an academy—it’s a community dedicated to fostering creativity, confidence, and lifelong skills. From arts to yoga, public speaking, dance, and personality development, our diverse programs are designed to inspire children to discover their unique strengths in a safe and supportive setting.

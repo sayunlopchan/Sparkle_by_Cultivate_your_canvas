@@ -17,7 +17,7 @@ const StaticHeader = () => {
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+              `static-navlink-link ${isActive ? "active-link" : ""}`
             }
           >
             About us
@@ -26,7 +26,7 @@ const StaticHeader = () => {
           <NavLink
             to="/program"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+              `static-navlink-link ${isActive ? "active-link" : ""}`
             }
           >
             Programs
@@ -34,7 +34,7 @@ const StaticHeader = () => {
           <NavLink
             to="/form"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+              `static-navlink-link ${isActive ? "active-link" : ""}`
             }
           >
             Admission Form
@@ -42,10 +42,18 @@ const StaticHeader = () => {
           <NavLink
             to="/career"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "bg-[#ffa500]" : ""}`
+              `static-navlink-link ${isActive ? "active-link" : ""}`
             }
           >
             Career
+          </NavLink>
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) =>
+              `root-navlink-link ${isActive ? "active-link" : ""}`
+            }
+          >
+            Gallery
           </NavLink>
         </nav>
 
