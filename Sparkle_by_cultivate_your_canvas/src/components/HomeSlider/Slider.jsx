@@ -5,7 +5,7 @@ import SliderHeader from '../StaticHeader/SliderHeader';
 
 // images
 import img1 from '../../assets/image/program/art/art.jpg';
-import img2 from '../../assets/image/program/dance/dance1.jpg';
+import img2 from '../../assets/image/program/dance/dance1.webp';
 import img3 from '../../assets/image/program/yoga/yoga.jpg';
 import img4 from '../../assets/image/program/yoga/yoga16.jpg';
 

@@ -30,25 +30,33 @@ import yogaImg22 from '../../assets/image/program/yoga/yoga22.jpg';
 import yogaImg23 from '../../assets/image/program/yoga/yoga23.jpg';
 
 // dance images
-import dance from '../../assets/image/program/dance/dance.jpg';
-import dance1 from '../../assets/image/program/dance/dance1.jpg';
-import dance2 from '../../assets/image/program/dance/dance2.jpg';
-import dance3 from '../../assets/image/program/dance/dance3.jpg';
-import dance4 from '../../assets/image/program/dance/dance4.jpg';
-import dance5 from '../../assets/image/program/dance/dance5.jpg';
-import dance6 from '../../assets/image/program/dance/dance6.jpg';
-import dance7 from '../../assets/image/program/dance/dance7.jpg';
-import dance8 from '../../assets/image/program/dance/dance8.jpg';
-import dance9 from '../../assets/image/program/dance/dance9.jpg';
-import dance10 from '../../assets/image/program/dance/dance10.jpg';
-import dance11 from '../../assets/image/program/dance/dance11.jpg';
-import dance12 from '../../assets/image/program/dance/dance12.jpg';
-import dance13 from '../../assets/image/program/dance/dance13.jpg';
-import dance14 from '../../assets/image/program/dance/dance14.jpg';
+import dance from '../../assets/image/program/dance/dance.webp';
+import dance1 from '../../assets/image/program/dance/dance1.webp';
+import dance2 from '../../assets/image/program/dance/dance2.webp';
+import dance3 from '../../assets/image/program/dance/dance3.webp';
+import dance4 from '../../assets/image/program/dance/dance4.webp';
+import dance5 from '../../assets/image/program/dance/dance5.webp';
+import dance6 from '../../assets/image/program/dance/dance6.webp';
+import dance7 from '../../assets/image/program/dance/dance7.webp';
+import dance8 from '../../assets/image/program/dance/dance8.webp';
+import dance9 from '../../assets/image/program/dance/dance9.webp';
+import dance10 from '../../assets/image/program/dance/dance10.webp';
+import dance11 from '../../assets/image/program/dance/dance11.webp';
+import dance12 from '../../assets/image/program/dance/dance12.webp';
+import dance13 from '../../assets/image/program/dance/dance13.webp';
+import dance14 from '../../assets/image/program/dance/dance14.webp';
+
+
+
+// header
 import StaticHeader from '../../components/StaticHeader/StaticHeader';
+
+// animation
 import AnimatedComponent from '../../components/Animation/AnimatedComponent';
 
 const ImageGallery = () => {
+
+  // states
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Image categories

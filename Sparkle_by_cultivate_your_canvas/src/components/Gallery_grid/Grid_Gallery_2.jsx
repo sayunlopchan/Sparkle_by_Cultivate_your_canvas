@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import './gallery.css';
 
 import img1 from '../../assets/image/program/art/art.jpg';
-import img2 from '../../assets/image/program/dance/dance.jpg';
-import img3 from '../../assets/image/program/dance/dance2.jpg'
-import img4 from '../../assets/image/program/dance/dance3.jpg'
-import img5 from '../../assets/image/program/dance/dance4.jpg'
+import img2 from '../../assets/image/program/dance/dance.webp';
+import img3 from '../../assets/image/program/dance/dance2.webp'
+import img4 from '../../assets/image/program/dance/dance3.webp'
+import img5 from '../../assets/image/program/dance/dance4.webp'
 
 // texture images
 import taxture from '../../assets/texture/bg-texture/bg-trangle-pattern-texture.jpg'
