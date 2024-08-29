@@ -4,6 +4,7 @@ import StaticHeader from '../../components/StaticHeader/StaticHeader'
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { IoPhonePortrait } from "react-icons/io5";
 import AnimatedComponent from '../../components/Animation/AnimatedComponent';
+import AnimatedComponent2 from '../../components/Animation/AnimatedComponent2';
 
 const Form = () => {
   return (
@@ -138,7 +139,7 @@ const Form = () => {
           <ul className='space-y-10'>
             {/* process 1 */}
             <li className='animation-disapp'>
-              <AnimatedComponent>
+              <AnimatedComponent2>
                 <div className='flex items-center gap-4 '>
                   <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>1</div>
                   <h1 className='text-lg font-bold text-orange-400'>Inquire</h1>
@@ -146,11 +147,11 @@ const Form = () => {
                 <div className='ml-20 text-sm font-semibold'>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
                 </div>
-              </AnimatedComponent>
+              </AnimatedComponent2>
             </li>
             {/* process 2 */}
             <li className='animation-disapp'>
-              <AnimatedComponent>
+              <AnimatedComponent2>
                 <div className='flex items-center gap-4'>
                   <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>2</div>
                   <h1 className='text-lg font-bold text-orange-400'>Meeting Interview</h1>
@@ -158,11 +159,11 @@ const Form = () => {
                 <div className='ml-20 text-sm font-semibold'>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
                 </div>
-              </AnimatedComponent>
+              </AnimatedComponent2>
             </li>
             {/* process 3 */}
             <li className='animation-disapp'>
-              <AnimatedComponent>
+              <AnimatedComponent2>
                 <div className='flex items-center gap-4'>
                   <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>3</div>
                   <h1 className='text-lg font-bold text-orange-400'>Pre-evaluation</h1>
@@ -170,11 +171,11 @@ const Form = () => {
                 <div className='ml-20 text-sm font-semibold'>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
                 </div>
-              </AnimatedComponent>
+              </AnimatedComponent2>
             </li>
             {/* process 4 */}
             <li className='animation-disapp'>
-              <AnimatedComponent>
+              <AnimatedComponent2>
                 <div className='flex items-center gap-4'>
                   <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>4</div>
                   <h1 className='text-lg font-bold text-orange-400'>Enrollment</h1>
@@ -182,7 +183,7 @@ const Form = () => {
                 <div className='ml-20 text-sm font-semibold'>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, laudantium?</p>
                 </div>
-              </AnimatedComponent>
+              </AnimatedComponent2>
             </li>
           </ul>
         </div>

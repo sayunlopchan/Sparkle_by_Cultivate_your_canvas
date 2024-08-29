@@ -1,9 +1,10 @@
 import React from 'react'
+
 // imgs
-import img1 from '../../assets/image/people/pose.jpg'
-import img2 from '../../assets/image/fun-activities/yoga/yoga.jpg'
-import img3 from '../../assets/image/award/grpbannerhold.jpg'
-import img4 from '../../assets/image/fun-activities/art/art.jpg'
+import img1 from '../../assets/image/people/chairWomen/chairwomen.jpg'
+import img2 from '../../assets/image/program/yoga/yoga.jpg'
+import img3 from '../../assets/image/people/grpbannerhold.jpg'
+import img4 from '../../assets/image/program/art/art.jpg'
 
 
 // texture images
@@ -11,13 +12,9 @@ import taxture from '../../assets/texture/bg-texture/white_linen_texture.jpg'
 
 // splash images
 import splashRed from '../../assets/texture/splash/modern-red-watercolor.png'
-
 import splashGreen from '../../assets/texture/splash/elegant-green-watercolor.png'
-
 import splashYelow from '../../assets/texture/splash/modern-yellow-orange-watercolor.png'
-
 import splashOrange from '../../assets/texture/splash/abstract-orange-watercolor.png'
-
 import splashPink from '../../assets/texture/splash/abstract-pink-watercolor.png'
 
 

@@ -5,11 +5,11 @@ import StaticHeader from '../../components/StaticHeader/StaticHeader';
 import bannerImage from '../../assets/image/about/bg-cover.jpg';
 
 // program imgs
-import arts from '../../assets/image/fun-activities/art/art.jpg';
-import yoga from '../../assets/image/fun-activities/yoga/yoga1.jpg';
-import publicSpeaking from '../../assets/image/fun-activities/yoga/yoga1.jpg';
-import dance from '../../assets/image/fun-activities/dance/dance.jpg';
-import personallityDevelopment from '../../assets/image/fun-activities/dance/dance.jpg';
+import arts from '../../assets/image/program/art/art.jpg';
+import yoga from '../../assets/image/program/yoga/yoga1.jpg';
+import publicSpeaking from '../../assets/image/program/yoga/yoga1.jpg';
+import dance from '../../assets/image/program/dance/dance.jpg';
+import personallityDevelopment from '../../assets/image/program/dance/dance.jpg';
 
 // icons
 import prop1 from '../../assets/icons/arts.svg';

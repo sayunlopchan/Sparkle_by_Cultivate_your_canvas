@@ -1,8 +1,8 @@
 import React from 'react'
 // images
-import ChairWomenPicture from '../../assets/image/people/pose.jpg'
-import Picture1 from '../../assets/image/fun-activities/art/art.jpg'
-import Picture2 from '../../assets/image/fun-activities/dance/dance7.jpg'
+import ChairWomenPicture from '../../assets/image/people/chairWomen/chairwomen.jpg'
+import Picture1 from '../../assets/image/program/art/art.jpg'
+import Picture2 from '../../assets/image/people/chairWomen/chairwomen1.jpg'
 
 
 // bg taxture
@@ -12,6 +12,9 @@ import texture from '../../assets/texture/bg-texture/white_linen_texture.jpg'
 import pin from '../../assets/texture/assets icon/red-drawing-pin.png'
 import plane from '../../assets/texture/assets icon/paper-airplane-with-dot.png'
 import book from '../../assets/texture/assets icon/books.png'
+
+
+// animation
 import AnimatedComponent from '../Animation/AnimatedComponent'
 import AnimatedComponent2 from '../Animation/AnimatedComponent2'
 

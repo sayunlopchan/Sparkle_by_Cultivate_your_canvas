@@ -4,10 +4,10 @@ import './slider.css';
 import SliderHeader from '../StaticHeader/SliderHeader';
 
 // images
-import img1 from '../../assets/image/fun-activities/art/art.jpg';
-import img2 from '../../assets/image/fun-activities/dance/dance1.jpg';
-import img3 from '../../assets/image/fun-activities/yoga/yoga.jpg';
-import img4 from '../../assets/image/fun-activities/yoga/yoga16.jpg';
+import img1 from '../../assets/image/program/art/art.jpg';
+import img2 from '../../assets/image/program/dance/dance1.jpg';
+import img3 from '../../assets/image/program/yoga/yoga.jpg';
+import img4 from '../../assets/image/program/yoga/yoga16.jpg';
 
 
 // Slider data

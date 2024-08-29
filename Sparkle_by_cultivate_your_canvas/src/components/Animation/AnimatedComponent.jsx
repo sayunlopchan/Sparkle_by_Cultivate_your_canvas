@@ -29,7 +29,7 @@ const AnimatedComponent = ({ children }) => {
   }, []);
 
   return (
-    <div ref={elementRef} className="animated-element">
+    <div ref={elementRef} className="animated-element overflow-hidden">
       {children}
     </div>
   );
