@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-width: 320px;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+
+/* for header active nav */
+.active-link {
+  color: white;
+  border: 2px solid white;
+  background-color: #ffa500;
+  padding: 10px 30px;
+}
+
+:root {
+  --theme-red: #e3191a;
+  --theme-blue: #1d78b4;
+  --theme-green: #32a02b;
+  --theme-orange: #ff7f00;
+}
+
+.hidden-element {
+  opacity: 0;
+  transform: translateY(100px); /* Initial position */
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.visible-element {
+  opacity: 1;
+  transform: translateY(0); /* Final position */
+}
+
+/* For column layout (translateY - up animation) */
+@keyframes transitionYUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* For row layout (translateX animations) */
+@keyframes transitionXRight {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes transitionXLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.transition-y-up {
+  animation: transitionYUp 0.6s ease-in;
+}
+
+.transition-x-right {
+  animation: transitionXRight 0.4s ease-in;
+}
+
+.transition-x-left {
+  animation: transitionXLeft 0.4s ease-in;
+}
+
+/* Card list  */
+
+.p-text {
+  @apply text-sm md:text-[16px] text-gray-600;
+}
