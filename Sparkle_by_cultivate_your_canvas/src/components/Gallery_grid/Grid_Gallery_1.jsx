@@ -34,31 +34,27 @@ const GridGallery_1 = () => {
 
       {/* img */}
       <div className='grid-gallery-1-container-box'>
+
         <div
           className='grid-gallery-imgs-grid-box'
           style={{ backgroundImage: `url(${taxture})` }}
         >
-
           <div
             className="grid-img "
             style={{ backgroundImage: `url(${img1})` }}
           />
-
           <div
             className="grid-img "
             style={{ backgroundImage: `url(${img2})` }}
           />
-
           <div
             className="grid-img "
             style={{ backgroundImage: `url(${img3})` }}
           />
-
           <div
             className="grid-img "
             style={{ backgroundImage: `url(${img4})` }}
           />
-
         </div>
       </div>
 
@@ -69,26 +65,38 @@ const GridGallery_1 = () => {
 
 
           <AnimatedComponent>
-
             <h1 className='text-red-500 font-[500] text-4xl '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque.</h1>
+          </AnimatedComponent>
 
+          <AnimatedComponent>
             <p className='p-text italic '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique nisi harum! Eaque quaerat, necessitatibus facilis saepe et est tenetur.</p>
+          </AnimatedComponent>
 
+          <AnimatedComponent>
             <p className='p-text '>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </AnimatedComponent>
 
 
           <ul className='card-ul'>
+            <AnimatedComponent>
+              <li><img src={splashRed} alt="red-splash" className='size-[50px]' />Art at Sparkle Kids Academy.</li>
+            </AnimatedComponent>
 
-            <li><img src={splashRed} alt="red-splash" className='size-[50px]' />Art at Sparkle Kids Academy.</li>
+            <AnimatedComponent>
+              <li><img src={splashGreen} alt="red-splash" className='size-[50px]' />Yoga at Sparkle Kids Academy.</li>
+            </AnimatedComponent>
 
-            <li><img src={splashGreen} alt="red-splash" className='size-[50px]' />Yoga at Sparkle Kids Academy.</li>
+            <AnimatedComponent>
+              <li><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
+            </AnimatedComponent>
 
-            <li><img src={splashYelow} alt="red-splash" className='size-[50px]' />Public speaking at Sparkle Kids Academy.</li>
+            <AnimatedComponent>
+              <li><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
+            </AnimatedComponent>
 
-            <li><img src={splashOrange} alt="red-splash" className='size-[50px]' />Dance at Sparkle Kids Academy.</li>
-
-            <li><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
+            <AnimatedComponent>
+              <li><img src={splashPink} alt="red-splash" className='size-[50px]' />Personality development at Sparkle Kids Academy.</li>
+            </AnimatedComponent>
 
           </ul>
         </div>

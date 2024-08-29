@@ -56,7 +56,7 @@ const FAQ = () => {
               className={`overflow-hidden transition-all duration-500 ease-in-out ${openFAQIndex === idx ? "max-h-screen" : "max-h-0"
                 }`}
             >
-              <p className="mt-2">{item.answer}</p>
+              <p className="mt-2b text-white">{item.answer}</p>
             </div>
           </div>
         ))}

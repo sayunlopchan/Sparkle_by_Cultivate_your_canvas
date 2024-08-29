@@ -2,7 +2,7 @@ import React from 'react';
 import Counter from './Counter';
 
 import cap from '../../assets/icons/cap.svg';
-import mic from '../../assets/icons/mic.svg';
+import mic from '../../assets/icons/mic2.svg';
 import award from '../../assets/icons/award.svg';
 
 const counterData = [
@@ -19,7 +19,7 @@ const counterData = [
   {
     icon: award,
     number: 50,
-    label: 'Awards',
+    label: 'Award program',
   },
 ];
 
@@ -31,7 +31,7 @@ const Counter_Ui = () => {
           key={index}
           className='w-[300px] flex items-center gap-3 border bg-gray-50 py-2 px-5 md:p-2 rounded-lg'
         >
-          <div className='size-[80px]'>
+          <div className='size-[60px]'>
             <img src={item.icon} alt={`${item.label} icon`} />
           </div>
           <div>

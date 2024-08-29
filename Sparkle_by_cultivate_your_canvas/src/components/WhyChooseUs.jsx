@@ -12,6 +12,8 @@ import ParentInvolvement from "../assets/texture/useableImages/parental-involvem
 import FlexiblePrograms from "../assets/texture/useableImages/Flexible Programs.jpg";
 
 import CreativeLearning from "../assets/texture/useableImages/nursery_teacher_3.jpg";
+import AnimatedComponent from "./Animation/AnimatedComponent";
+import AnimatedComponent2 from "./Animation/AnimatedComponent2";
 
 
 const WhyChooseUs = () => {
@@ -81,17 +83,19 @@ const WhyChooseUs = () => {
 
         {
           data.map((item, idx) => (
-            <div
-              key={idx}
-              className="w-[340px] h-[400px] rounded-lg shadow-white shadow-md flex flex-col items-center p-3 space-y-5 text-center bg-white">
-              <img
-                src={item.image}
-                alt="img"
-                className="size-[130px] rounded-full bg-red-500"
-              />
-              <h1 className="font-semibold text-2xl">{item.title}</h1>
-              <p>{item.p}</p>
-            </div>
+            <AnimatedComponent2>
+              <div
+                key={idx}
+                className="w-[340px] h-[400px] rounded-lg shadow-white shadow-md flex flex-col items-center p-3 space-y-5 text-center bg-white">
+                <img
+                  src={item.image}
+                  alt="img"
+                  className="size-[130px] rounded-full bg-red-500"
+                />
+                <h1 className="font-semibold text-2xl">{item.title}</h1>
+                <p>{item.p}</p>
+              </div>
+            </AnimatedComponent2>
 
           ))
         }
