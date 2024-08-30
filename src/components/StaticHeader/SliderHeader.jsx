@@ -12,7 +12,7 @@ const SliderHeader = () => {
       <header className='slider-header '>
         <div className='static-logo'>
           <NavLink to={"/"}>
-            <img src={logo} alt="Sparkle logo" className='size-[80px]' />
+            <img src={logo} alt="Sparkle logo" className='size-[80px] p-2' />
           </NavLink>
         </div>
 

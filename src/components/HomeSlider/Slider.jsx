@@ -20,23 +20,30 @@ const SliderData = [
   {
     img: img2,
     title: "Dance",
-    author: " Ira Sushmita Chamling Rai",
+    author: "Rosy Shrestha",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae.",
+      "Children can develop coordination, balance, and flexibility while fostering creativity and self-expression through dance classes. These classes build confidence and a love for the art with structured, engaging instruction.",
   },
   {
     img: img3,
-    title: "Slider 3",
-    author: "Slider",
+    title: "Yoga",
+    author: "Ira Sushmita Chamling Rai",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae.",
+      "yoga program helps children improve focus, flexibility, and emotional balance through guided poses and mindfulness. It builds body awareness and coordination, fostering resilience and confidence.",
   },
   {
     img: img4,
-    title: "Slider 4",
-    author: "Slider",
+    title: "Public Speaking",
+    author: "Snehalata Raut Thapa",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae.",
+      "Children build confidence and improve their communication skills through our program. They learn to articulate their thoughts clearly, organize their ideas effectively, and engage with audiences, setting the stage for future leadership and enhancing their ability to express themselves persuasively.",
+  },
+  {
+    img: img4,
+    title: "Public Speaking",
+    author: "Snehalata Raut Thapa",
+    description:
+      "Children build confidence and improve their communication skills through our program. They learn to articulate their thoughts clearly, organize their ideas effectively, and engage with audiences, setting the stage for future leadership and enhancing their ability to express themselves persuasively.",
   },
 ];
 

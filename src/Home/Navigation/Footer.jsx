@@ -73,11 +73,41 @@ const Footer = () => {
           <div className="footer-content-item footer-Qlinks-container">
             <h2 className="footer-heading">Quick Links</h2>
             <ul className="footer-link-container">
-              <li className="footer-link"><NavLink to={'/about'}>About us</NavLink></li>
-              <li className="footer-link"><NavLink to={'/program'}>Programs</NavLink></li>
-              <li className="footer-link"><NavLink to={'/form'}>Addmission form</NavLink></li>
-              <li className="footer-link"><NavLink to={'/career'}>Career</NavLink></li>
-              <li className="footer-link"><NavLink to={'/contact'}>Contact</NavLink></li>
+              <li>
+                <NavLink
+                  className={"footer-link"}
+                  to={'/about'}>
+                  About us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={"footer-link"}
+                  to={'/program'}>
+                  Programs
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={"footer-link"}
+                  to={'/form'}>
+                  Addmission form
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={"footer-link"}
+                  to={'/career'}>
+                  Career
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className={"footer-link"}
+                  to={'/contact'}>
+                  Contact
+                </NavLink>
+              </li>
             </ul>
 
           </div>

@@ -10,9 +10,9 @@ const Useable = ({ message, mainText, subText }) => {
             <span className="p-2 bg-red-300 text-sm font-[500] rounded-full border border-b-2 border-black">
               {message}
             </span>
-            <div className="font-semibold text-[24px]">
-              <h1>{mainText}</h1>
-              <h2>{subText}</h2>
+            <div className="font-semibold">
+              <h1 className='text-4xl'>{mainText}</h1>
+              <h2 className='text-xl'>{subText}</h2>
             </div>
           </div>
         </div>

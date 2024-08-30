@@ -1,18 +1,30 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-// react icon
+// react icons
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-
-// social icons
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 // logo
+import logo from '../../assets/logo/Sparkle By CYC.svg';
 
-import logo from '../../assets/logo/Sparkle By CYC.svg'
+
+
+const socialLinks = [
+  { href: "https://www.facebook.com/sparkle.cyc", icon: <FaFacebook size={30} />, name: "Facebook" },
+  { href: "https://www.instagram.com/sparkle__kids_academy/", icon: <FaInstagram size={30} />, name: "Instagram" },
+  { href: "", icon: <FaWhatsapp size={30} />, name: "Whatsapp" }
+];
+
+const navLinks = [
+  { path: "/", name: "Home" },
+  { path: "/about", name: "About us" },
+  { path: "/program", name: "Program" },
+  { path: "/form", name: "Admission form" },
+  { path: "/gallery", name: "Gallery" },
+  { path: "/contact", name: "Contact us" },
+];
 
 const Root_Drawer = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,77 +75,46 @@ const Root_Drawer = () => {
       {/* Drawer */}
       <div
         ref={drawerRef}
-        className={`bg-white text-black fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px]  transform transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "translate-x-full hidden"
-          } `}
+        className={`bg-white text-black fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] transform transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         {/* logo */}
-        <div className=" flex justify-center items-center p-2">
+        <div className="flex justify-center items-center p-2">
           <div className="mx-auto">
-            <img src={logo} alt="Sparkle logo" className='size-[80px]' />
+            <img src={logo} alt="Sparkle logo" className='w-[80px]' />
           </div>
         </div>
 
         {/* Sidebar content here */}
-        <div >
-          <NavLink
-            to="/"
-            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
-          >
-            About us
-          </NavLink>
-
-          <NavLink
-            to="/program"
-            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
-          >
-            Program
-          </NavLink>
-
-          <NavLink
-            to="/form"
-            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
-          >
-            Addmission form
-          </NavLink>
-          <NavLink
-            to="/gallery"
-            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
-          >
-            Gallery
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="block hover:bg-gray-700 py-2 px-4 border-b duration-500"
-          >
-            Contact us
-          </NavLink>
+        <div>
+          {navLinks.map((link, index) => (
+            <NavLink
+              key={index}
+              to={link.path}
+              className={({ isActive }) =>
+                `block py-2 px-4 border-b duration-500 ${isActive ? "bg-orange-500 text-white" : "hover:bg-gray-300"}`
+              }
+            >
+              {link.name}
+            </NavLink>
+          ))}
         </div>
 
-        {/* social links */}
-        <div className="text-center space-y-3">
+        {/* Social links */}
+        <div className="social-links text-center space-y-3 mt-6">
           <h1>Follow us </h1>
           <div className="flex justify-center gap-3">
-            <a href="https://www.facebook.com/sparkle.cyc">
-              <FaFacebook size={30} />
-            </a>
-            <a href="https://www.instagram.com/sparkle__kids_academy/">
-              <FaInstagram size={30} />
-            </a>
-            <a href="">
-              <FaWhatsapp size={30} />
-            </a>
+            {socialLinks.map((link, index) => (
+              <a key={index} href={link.href} aria-label={link.name}>
+                {link.icon}
+              </a>
+            ))}
           </div>
         </div>
-        {/* close button */}
+
+        {/* Close button */}
         <div className="flex justify-center items-center mt-10">
-          <button onClick={toggleDrawer} className=" ">
+          <button onClick={toggleDrawer}>
             <IoClose size={40} />
           </button>
         </div>

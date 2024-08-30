@@ -50,19 +50,21 @@ const FAQ = () => {
       {Faqdata.map((item, idx) => (
         <div
           key={idx}
-          className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-colors duration-300 ease-in-out ${openFAQIndex === idx ? "bg-orange-500 text-white" : "bg-white"
+          className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-all duration-500 ease-in-out ${openFAQIndex === idx ? "bg-orange-500 text-white" : ""
             }`}
           onClick={() => handleFAQ(idx)}
         >
-          <h1 className={`font-semibold ${openFAQIndex === idx ? 'border-b border-white border-dashed' : ''}`}>
+          <h1 className={`font-semibold transition-colors duration-500 ${openFAQIndex === idx ? 'border-b border-white border-dashed' : ''}`}>
             {item.Question}
           </h1>
-          {/* FAQ answer with optimized transition */}
+          {/* FAQ answer with synchronized close and text disappearance */}
           <div
-            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQIndex === idx ? "opacity-100 h-auto" : "opacity-0 h-0"
+            className={`transition-all duration-500 ease-in-out overflow-hidden ${openFAQIndex === idx ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}
           >
-            <p className="mt-2 pt-4">{item.answer}</p>
+            <p className={`mt-2 pt-4 text-white`}>
+              {item.answer}
+            </p>
           </div>
         </div>
       ))}

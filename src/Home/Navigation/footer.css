@@ -57,16 +57,14 @@
   @apply text-[#c8c8c8];
 }
 
-/* Quick links */
-.footer-Qlinks-container {
-  /* @apply col-span-2; */
-}
-.footer-Qlinks-container .footer-link-container li a:hover {
-  @apply text-[#c8c8c8];
-}
+/* Quick Links */
 
 .footer-link-container {
   @apply space-y-3;
+}
+
+.footer-link-container li .footer-link:hover {
+  @apply text-[#c8c8c8] transition-all duration-300 ml-1;
 }
 
 /* footer-map */

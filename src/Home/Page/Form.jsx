@@ -256,11 +256,11 @@ const Form = () => {
                     <div className="size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white">
                       {process.step}
                     </div>
-                    <h1 className="text-lg font-bold text-orange-400">
+                    <h1 className="text-2xl font-bold text-orange-400">
                       {process.title}
                     </h1>
                   </div>
-                  <div className="ml-[65px] text-sm font-semibold">
+                  <div className="ml-[65px] mt-5 text-lg">
                     <p>{process.description}</p>
                   </div>
                 </AnimatedComponent2>

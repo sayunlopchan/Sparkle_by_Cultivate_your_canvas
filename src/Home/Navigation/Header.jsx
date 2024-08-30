@@ -39,7 +39,7 @@ const Header = () => {
     >
       <div className="root-header-logo">
         <NavLink to={"/"}>
-          <img src={logo} alt="sparkle logo" className="size-[80px]" />
+          <img src={logo} alt="sparkle logo" className="size-[80px] p-2" />
         </NavLink>
       </div>
 

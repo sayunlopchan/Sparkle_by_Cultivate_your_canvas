@@ -7,9 +7,9 @@ import bannerImage from "../../assets/image/useables/bg-cover.jpg";
 // program imgs
 import arts from "../../assets/image/program/art/art.webp";
 import yoga from "../../assets/image/program/yoga/yoga1.webp";
-import publicSpeaking from "../../assets/image/program/yoga/yoga1.webp";
+import publicSpeaking from "../../assets/image/people/chairWomen/chairwomen1.webp";
 import dance from "../../assets/image/program/dance/dance.webp";
-import personallityDevelopment from "../../assets/image/program/dance/dance.webp";
+import personallityDevelopment from "../../assets/image/program/art/kid2.webp";
 
 // icons
 import prop1 from "../../assets/icons/arts.svg";
@@ -21,6 +21,11 @@ import prop5 from "../../assets/texture/useableImages/mindful.webp";
 import AnimatedComponent2 from "../../components/Animation/AnimatedComponent2";
 import AnimatedComponent from "../../components/Animation/AnimatedComponent";
 import Useable from "../../components/Useable/Useable";
+import Booking from "../../components/booking";
+
+
+
+
 
 const Program = () => {
   const programData = [
@@ -80,37 +85,41 @@ const Program = () => {
 
         {/* Program Sections */}
         {programData.map((program, index) => (
-          <div
-            key={index}
-            className={`flex ${index % 2 === 0
-              ? "max-lg:flex-col"
-              : "flex-row-reverse max-lg:flex-col"
-              } gap-6 md:gap-24 p-10 items-center`}
-          >
-            <div className="lg:w-[40%]">
-              <AnimatedComponent>
-                <img
-                  src={program.image}
-                  alt={program.title}
-                  className={`animate-animate shadow-xl max-lg:h-[300px] max-sm:h-full max-md:hidden`}
-                />
-              </AnimatedComponent>
+          <React.Fragment key={index}>
+            <div
+              className={`flex ${index % 2 === 0
+                ? "max-lg:flex-col"
+                : "flex-row-reverse max-lg:flex-col"
+                } gap-6 md:gap-24 p-10 items-center`}
+            >
+              <div className="lg:w-[40%]">
+                <AnimatedComponent>
+                  <img
+                    src={program.image}
+                    alt={program.title}
+                    className={`animate-animate shadow-xl max-lg:h-[300px] max-sm:h-full max-md:hidden`}
+                  />
+                </AnimatedComponent>
+              </div>
+              <div className="lg:w-[60%]">
+                <AnimatedComponent2>
+                  <div className="flex justify-center items-start flex-col">
+                    <img src={program.icon} alt="" className="size-[100px]" />
+                    <h1 className="font-bold text-[30px]">
+                      {program.title}
+                    </h1>
+                  </div>
+                  <p
+                    className="p-text"
+                    dangerouslySetInnerHTML={{ __html: program.para }}
+                  />
+                </AnimatedComponent2>
+              </div>
             </div>
-            <div className="lg:w-[60%]">
-              <AnimatedComponent2>
-                <div className="flex justify-center items-start flex-col">
-                  <img src={program.icon} alt="" className="size-[100px]" />
-                  <h1 className="mx-5 font-bold text-[30px]">
-                    {program.title}
-                  </h1>
-                </div>
-                <p
-                  className="p-text"
-                  dangerouslySetInnerHTML={{ __html: program.para }}
-                />
-              </AnimatedComponent2>
-            </div>
-          </div>
+
+            {/* Conditionally render the Booking component after the second program */}
+            {index === 1 && <Booking />}
+          </React.Fragment>
         ))}
       </div>
     </div>
