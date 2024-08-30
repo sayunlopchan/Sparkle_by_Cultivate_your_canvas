@@ -69,7 +69,7 @@
 
 /* Swiper Content (Text) */
 .swiper-content {
-  @apply absolute top-[25%] md:top-[28%] left-5 md:left-20 w-[70%] lg:w-[600px] overflow-hidden text-white z-10;
+  @apply absolute top-[25%] md:top-[28%] left-5 md:left-20 w-[70%] lg:w-[600px] text-white z-10;
 }
 
 /* Content Styling */
@@ -78,15 +78,11 @@
 }
 
 .content-h2 {
-  @apply text-[30px] lg:text-[45px];
+  @apply text-[20px] lg:text-[45px];
 }
 
 .content-p {
   @apply text-sm md:text-[18px];
-}
-
-.content-btn {
-  @apply py-3 px-4 rounded border-2;
 }
 
 /* Thumbnail Container */

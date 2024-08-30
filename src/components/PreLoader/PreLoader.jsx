@@ -12,7 +12,7 @@ const PreLoader = () => {
     // Set loading to false after 3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
 
     // Clean up the timer when the component unmounts
     return () => clearTimeout(timer);

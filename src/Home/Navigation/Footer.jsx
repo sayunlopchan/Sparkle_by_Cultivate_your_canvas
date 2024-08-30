@@ -144,8 +144,8 @@ const Footer = () => {
 
             <div className="footer-TaC">
               <h3>Terms and Conditions</h3>
-              <a href="">[Privacy Policy]</a>
-              <a href="">[Terms of Service]</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
             </div>
           </div>
 

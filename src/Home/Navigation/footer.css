@@ -88,7 +88,7 @@
 }
 
 .creator-logo {
-  @apply w-[180px];
+  @apply w-[130px] lg:w-[180px];
 }
 
 .license {
@@ -123,4 +123,12 @@
 }
 .btn-container button:hover {
   @apply backdrop-blur-sm bg-white/30;
+}
+
+/* footer Terms and conditions */
+.footer-TaC a {
+  @apply mr-3 transition-all duration-300;
+}
+.footer-TaC a:hover {
+  @apply text-gray-300 underline underline-offset-4;
 }

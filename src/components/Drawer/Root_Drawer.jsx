@@ -9,8 +9,6 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 // logo
 import logo from '../../assets/logo/Sparkle By CYC.svg';
 
-
-
 const socialLinks = [
   { href: "https://www.facebook.com/sparkle.cyc", icon: <FaFacebook size={30} />, name: "Facebook" },
   { href: "https://www.instagram.com/sparkle__kids_academy/", icon: <FaInstagram size={30} />, name: "Instagram" },
@@ -95,6 +93,7 @@ const Root_Drawer = () => {
               className={({ isActive }) =>
                 `block py-2 px-4 border-b duration-500 ${isActive ? "bg-orange-500 text-white" : "hover:bg-gray-300"}`
               }
+              onClick={() => setIsOpen(false)} // Close drawer on link click
             >
               {link.name}
             </NavLink>

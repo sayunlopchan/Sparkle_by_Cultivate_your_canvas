@@ -29,7 +29,7 @@ const SliderData = [
     title: "Yoga",
     author: "Ira Sushmita Chamling Rai",
     description:
-      "yoga program helps children improve focus, flexibility, and emotional balance through guided poses and mindfulness. It builds body awareness and coordination, fostering resilience and confidence.",
+      "Yoga program helps children improve focus, flexibility, and emotional balance through guided poses and mindfulness. It builds body awareness and coordination, fostering resilience and confidence.",
   },
   {
     img: img4,
@@ -69,6 +69,17 @@ const Slider = () => {
     }, 300);
   };
 
+  const handleThumbnailClick = (index) => {
+    if (isTransitioning || index === currentIndex) return;
+    setIsTransitioning(true);
+    setAnimationClass(index > currentIndex ? "slide-out-next" : "slide-out-prev");
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setAnimationClass(index > currentIndex ? "slide-in-next" : "slide-in-prev");
+      setIsTransitioning(false);
+    }, 300);
+  };
+
   useEffect(() => {
     const intervalId = setInterval(handleNext, 6000);
     return () => clearInterval(intervalId);
@@ -100,8 +111,8 @@ const Slider = () => {
         {SliderData.map((item, idx) => (
           <div
             key={idx}
-            className={`slider-thumbnail ${idx === currentIndex ? "active-thumbnail" : ""
-              }`}
+            className={`slider-thumbnail ${idx === currentIndex ? "active-thumbnail" : ""}`}
+            onClick={() => handleThumbnailClick(idx)} // Thumbnail click handler
           >
             {/* Lazy loading */}
             <img src={item.img} alt={item.title} loading="lazy" />

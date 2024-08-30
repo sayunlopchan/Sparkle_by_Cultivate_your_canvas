@@ -63,7 +63,6 @@ const GridGallery_1 = () => {
       <div className="grid-gallery-1-container-box relative">
         <AnimatedComponent>
           <img src={butterfly} alt="butterfly" className="butterfly" />
-          <img src={butterfly} alt="butterfly" className="butterfly" />
           <div
             className="grid-gallery-imgs-grid-box"
             style={{ backgroundImage: `url(${taxture})` }}

@@ -20,7 +20,7 @@ import AnimatedComponent2 from '../Animation/AnimatedComponent2'
 
 const ChairWomenMessage = () => {
   return (
-    <div className='p-10 bg-cover bg-center overflow-hidden' style={{ backgroundImage: `url(${texture})` }}>
+    <div className='p-10 bg-cover bg-center' style={{ backgroundImage: `url(${texture})` }}>
       <div className='w-full grid grid-cols-1 lg:grid-cols-12 spaace-y-5 max-lg:justify-items-center gap-5'>
         {/* message */}
         <div className='lg:col-span-7 max-lg:order-2 space-y-5 relative'>
@@ -48,24 +48,32 @@ const ChairWomenMessage = () => {
         <div className='md:col-span-5 max-lg:order-1'>
           <AnimatedComponent2>
             <div className='relative lg:h-full lg:w-full h-[300px] w-[350px] '>
-              {/* pin */}
-              <img src={pin} alt="push pin" className='absolute z-10 size-10 md:-top-[15%] lg:-top-3 right-[32%] rotate-45' />
-
-              <img src={pin} alt="push pin" className='absolute z-10 size-5 top-[43%] left-[2%] ' />
-
-              <img src={pin} alt="push pin" className='absolute z-10 size-5 -top-[10%] left-[75%]' />
-
               {/* books */}
               <img src={book} alt="plane" className='absolute z-10 size-[200px] lg:top-[200px] max-lg:hidden md:-right-[60%] lg:right-[2%]' />
 
               {/* img */}
-              <img src={ChairWomenPicture} alt="Chair Women Picture" className='size-[250px] md:size-[300px] lg:size-[300px] border-8 border-white shadow-xl -rotate-6 absolute md:-top-[16%] lg:-top-[20%] left-[10%]' />
+              <div className='size-[250px] md:size-[300px] lg:size-[300px] relative'>
+                <img src={ChairWomenPicture} alt="Chair Women Picture" className='size-[250px] md:size-[300px] lg:size-[300px] border-8 border-white shadow-xl -rotate-6 absolute md:-top-[16%] lg:-top-[20%] left-[10%]' />
+                <img
+                  src={pin} alt="push pin"
+                  className='absolute z-10 size-10 -right-[10%] -top-[10%] md:-top-[25%] lg:-top-[29%] rotate-45' />
+              </div>
 
               {/* img */}
-              <img src={Picture1} alt="Chair Women Picture" className='size-[120px] lg:size-[150px] border-4 border-yellow-500 rotate-6 absolute top-[45%] shadow-xl' />
+              <div className='size-[120px] lg:size-[150px] relative'>
+                <img src={Picture1} alt="Chair Women Picture" className='size-[120px] lg:size-[150px] border-4 border-yellow-500 rotate-6 absolute -top-[90%] shadow-xl' />
+                <img
+                  src={pin} alt="push pin"
+                  className='absolute z-10 size-5 -top-[99%] left-[0%] ' />
+              </div>
 
               {/* img */}
-              <img src={Picture2} alt="Chair Women Picture" className='size-[100px] lg:size-[120px] border-4 border-green-500 rotate-6 absolute top-[5%] left-[75%] shadow-xl' />
+              <div className='size-[100px] lg:size-[120px] relative'>
+                <img src={Picture2} alt="Chair Women Picture" className='size-[100px] lg:size-[120px] border-4 border-green-500 rotate-6 absolute -top-[340%] left-[260%] shadow-xl' />
+                <img
+                  src={pin} alt="push pin"
+                  className='absolute z-10 size-5 -top-[345%] -right-[268%]' />
+              </div>
             </div>
           </AnimatedComponent2>
         </div>
