@@ -50,6 +50,7 @@ import dance14 from '../../assets/image/program/dance/dance14.webp';
 
 // header
 import StaticHeader from '../../components/StaticHeader/StaticHeader';
+import GalleySkeleton from '../../components/skeleton/GallerySkeleton';
 
 // animation
 
@@ -129,6 +130,7 @@ const ImageGallery = () => {
           </div>
         )}
       </div>
+      <GalleySkeleton />
     </div>
   );
 }
