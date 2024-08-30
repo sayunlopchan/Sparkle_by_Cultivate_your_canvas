@@ -28,7 +28,7 @@ const Program = () => {
       image: arts,
       icon: prop1,
       title: "Arts",
-      para: `At <strong>Sparkle Kids Academy</strong>, our art classes, led by the talented young artist <strong className='text-red-500 italic'><a href="">Lujala Shakya</a></strong>, offer children a unique opportunity to explore their creativity and imagination. Art plays a vital role in a child's development, helping them to express their thoughts and emotions in a visual and tangible way. Through our art program, students will develop fine motor skills, enhance their problem-solving abilities, and improve their visual-spatial understanding.
+      para: `At <strong>Sparkle Kids Academy</strong>, our art classes, led by the talented young artist <strong>Lujala Shakya</strong>, offer children a unique opportunity to explore their creativity and imagination. Art plays a vital role in a child's development, helping them to express their thoughts and emotions in a visual and tangible way. Through our art program, students will develop fine motor skills, enhance their problem-solving abilities, and improve their visual-spatial understanding.
             <br />
             Art encourages children to think critically, make decisions, and explore different perspectives. It fosters creativity and innovation, allowing kids to experiment with colors, shapes, and techniques, leading to a deeper understanding of the world around them. Under Lujala Shakya's guidance, students are inspired to create and express themselves freely, building confidence and self-esteem. Engaging in art not only nurtures a child's artistic talents but also contributes to their overall cognitive and emotional development, making it an essential part of a well-rounded education.`,
     },
@@ -36,21 +36,21 @@ const Program = () => {
       image: yoga,
       icon: prop2,
       title: "Yoga",
-      para: `At <strong>Sparkle Kids Academy</strong>, our yoga program, led by the experienced  <strong className='text-red-500 italic'><a href="">Ira Sushmita Chamling Rai</a></strong>, is designed to provide children with a holistic approach to physical and mental well-being. Yoga offers a myriad of benefits for young learners, fostering not only physical strength and flexibility but also mental clarity and emotional balance. Through carefully structured sessions, Ira guides students in practicing various yoga poses, breathing exercises, and mindfulness techniques that are tailored to their developmental needs.
+      para: `At <strong>Sparkle Kids Academy</strong>, our yoga program, led by the experienced  <strong>Ira Sushmita Chamling Rai</strong>, is designed to provide children with a holistic approach to physical and mental well-being. Yoga offers a myriad of benefits for young learners, fostering not only physical strength and flexibility but also mental clarity and emotional balance. Through carefully structured sessions, Ira guides students in practicing various yoga poses, breathing exercises, and mindfulness techniques that are tailored to their developmental needs.
             <br />
-            Children engaged in our yoga program will experience improved focus, enhanced concentration, and better stress management. The practice of yoga helps in developing body awareness, promoting healthy posture, and increasing overall physical coordination. Additionally, yoga encourages self-discipline and cultivates a sense of inner calm, empowering children to navigate life's challenges with resilience and confidence. Under Ira Sushmita Chamling Rai’s expert instruction, our students are nurtured in a supportive environment where they can grow both physically and emotionally, laying a strong foundation for lifelong health and well-being.`,
+            Children engaged in our yoga program will experience improved focus, enhanced concentration, and better stress management. The practice of yoga helps in developing body awareness, promoting healthy posture, and increasing overall physical coordination. Additionally, yoga encourages self-discipline and cultivates a sense of inner calm, empowering children to navigate life's challenges with resilience and confidence. Under Ira Sushmita Chamling Rai's expert instruction, our students are nurtured in a supportive environment where they can grow both physically and emotionally, laying a strong foundation for lifelong health and well-being.`,
     },
     {
       image: publicSpeaking,
       icon: prop3,
       title: "Public Speaking",
-      para: `At <strong>Sparkle Kids Academy</strong>, our public speaking program, led by certified trainer <strong className='text-red-500 italic'><a href="">Snehalata Raut Thapa</a></strong>, is designed to empower children with the confidence and communication skills they need to succeed. Public speaking is a vital skill that helps students articulate their thoughts clearly, organize their ideas effectively, and engage with an audience. Through our program, children learn to overcome the fear of speaking in public, building self-assurance and poise in various social and academic settings. These skills are essential for future leadership roles, as they enable students to express themselves confidently and persuasively. Under Snehalata Raut Thapa's expert guidance, our students develop not only as communicators but also as thoughtful and articulate individuals, ready to take on the challenges of the future.`,
+      para: `At <strong>Sparkle Kids Academy</strong>, our public speaking program, led by certified trainer <strong>Snehalata Raut Thapa</strong>, is designed to empower children with the confidence and communication skills they need to succeed. Public speaking is a vital skill that helps students articulate their thoughts clearly, organize their ideas effectively, and engage with an audience. Through our program, children learn to overcome the fear of speaking in public, building self-assurance and poise in various social and academic settings. These skills are essential for future leadership roles, as they enable students to express themselves confidently and persuasively. Under Snehalata Raut Thapa's expert guidance, our students develop not only as communicators but also as thoughtful and articulate individuals, ready to take on the challenges of the future.`,
     },
     {
       image: dance,
       icon: prop4,
       title: "Dance",
-      para: `At <strong>Sparkle Kids Academy</strong>, our dance program, led by esteemed instructor <strong className='text-red-500 italic'><a href="">Rosy Shrestha</a></strong>, offers children an exceptional opportunity to explore the art of dance. This program is designed to foster both physical and cognitive development in a structured yet creative environment. Through our curriculum, students will enhance their coordination, balance, and flexibility, while also cultivating discipline and focus. Dance encourages self-expression and creativity, providing children with the tools to build confidence and resilience. Under Rosy Shrestha's expert guidance, our program not only teaches the technical aspects of dance but also instills a deep appreciation for the art form, preparing students for future success both on and off the stage.`,
+      para: `At <strong>Sparkle Kids Academy</strong>, our dance program, led by esteemed instructor <strong >Rosy Shrestha</a></strong>, offers children an exceptional opportunity to explore the art of dance. This program is designed to foster both physical and cognitive development in a structured yet creative environment. Through our curriculum, students will enhance their coordination, balance, and flexibility, while also cultivating discipline and focus. Dance encourages self-expression and creativity, providing children with the tools to build confidence and resilience. Under Rosy Shrestha's expert guidance, our program not only teaches the technical aspects of dance but also instills a deep appreciation for the art form, preparing students for future success both on and off the stage.`,
     },
     {
       image: personallityDevelopment,
@@ -63,7 +63,7 @@ const Program = () => {
   ];
 
   return (
-    <div className="bg-[#CCE0FF]">
+    <div className="bg-[#CCE0FF] overflow-hidden">
       <StaticHeader />
       <div className="space-y-5">
         {/* heading */}

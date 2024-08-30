@@ -25,7 +25,7 @@
 body {
   min-width: 320px;
   margin: 0px auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* for header active nav */
