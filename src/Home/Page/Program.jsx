@@ -21,7 +21,8 @@ import prop5 from "../../assets/texture/useableImages/mindful.webp";
 import AnimatedComponent2 from "../../components/Animation/AnimatedComponent2";
 import AnimatedComponent from "../../components/Animation/AnimatedComponent";
 import Useable from "../../components/Useable/Useable";
-import Booking from "../../components/booking";
+import Booking from "../../components/Booking";
+
 
 
 
