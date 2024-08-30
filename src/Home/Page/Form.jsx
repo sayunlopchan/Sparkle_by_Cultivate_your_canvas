@@ -58,7 +58,7 @@ const Form = () => {
   ];
 
   return (
-    <div className="bg-[#CCE0FF] min-h-screen">
+    <div className="bg-[#CCE0FF] min-h-screen overflow-hidden">
       <StaticHeader />
 
       {/* heading */}
