@@ -23,6 +23,7 @@ const GalleySkeleton = () => {
         <div className='gallery-skeleton-box' />
         <div className='gallery-skeleton-box' />
         <div className='gallery-skeleton-box' />
+
       </div>
     </div>
   );
