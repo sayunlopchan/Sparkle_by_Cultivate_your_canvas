@@ -2,14 +2,14 @@
 .animated-element {
   opacity: 0;
   transform: translateX(-100px);
-  transition: opacity 1s ease-in, transform 1s ease-in;
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 
 /* from right */
 .animated-element-2 {
   opacity: 0;
   transform: translateX(100px);
-  transition: opacity 1s ease-in, transform 1s ease-in;
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 
 .in-view {

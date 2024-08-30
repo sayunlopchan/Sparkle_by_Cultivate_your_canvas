@@ -13,7 +13,7 @@ const AnimatedComponent2 = ({ children }) => {
           observer.unobserve(entry.target); // Unobserve after animation
         }
       },
-      { threshold: [0.5] } // Adjust threshold if needed
+      { threshold: [0.3] } // Adjust threshold if needed
     );
 
     if (element) {
