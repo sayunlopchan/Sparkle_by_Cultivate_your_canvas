@@ -36,7 +36,7 @@ const SliderData = [
     title: "Public Speaking",
     author: "Snehalata Raut Thapa",
     description:
-      "Children build confidence and improve their communication skills through our program. They learn to articulate their thoughts clearly, organize their ideas effectively, and engage with audiences, setting the stage for future leadership and enhancing their ability to express themselves persuasively.",
+      "Build confidence and improve communication skills.Learn to articulate thoughts clearly, organize ideas effectively, and engage with audiences, setting the stage for future leadership and enhancing their ability to express themselves persuasively.",
   },
 ];
 

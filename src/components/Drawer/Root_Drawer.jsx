@@ -22,6 +22,7 @@ const navLinks = [
   { path: "/about", name: "About us" },
   { path: "/program", name: "Program" },
   { path: "/form", name: "Admission form" },
+  { path: "/career", name: "Career" },
   { path: "/gallery", name: "Gallery" },
   { path: "/contact", name: "Contact us" },
 ];

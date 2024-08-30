@@ -117,7 +117,6 @@ const Program = () => {
               </div>
             </div>
 
-            {/* Conditionally render the Booking component after the second program */}
             {index === 1 && <Booking />}
           </React.Fragment>
         ))}

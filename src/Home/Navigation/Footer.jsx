@@ -133,7 +133,7 @@ const Footer = () => {
             <div className="newsletter-container">
               <h2 className="footer-heading">Newsletter</h2>
               <form action="">
-                <input type="text" placeholder="example@gmail.com" />
+                <input className="input-box" type="text" placeholder="example@gmail.com" />
                 <div className="btn-container">
                   <button type="submit" >submit</button>
                 </div>
@@ -153,13 +153,14 @@ const Footer = () => {
 
 
         <hr />
-        {/*  */}
+        {/*footer-footer */}
         <div className="footer-footer">
           <div className="creator-container">
             <h2>Powered by</h2>
             <img src={CreaterCompanyLogo} alt="Author Company logo" className="creator-logo" />
           </div>
-          <p className="license">© Copyright 2024 Cultivate your canvas All Rights Reserved</p>
+
+          <p className="license">© Copyright 2024 Cultivate your canvas • All Rights Reserved</p>
         </div>
         {/*  */}
       </div>
