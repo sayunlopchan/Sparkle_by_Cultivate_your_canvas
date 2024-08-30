@@ -1,8 +1,8 @@
 import React from 'react'
 
 // sticker img
-import candle2 from '../../assets/texture/useableImages/burning-candle2.png'
-import candle3 from '../../assets/texture/useableImages/burning-candle3.png'
+import candle2 from '../../assets/image/vector/burning-candle2.webp'
+import candle3 from '../../assets/image/vector/burning-candle3.webp'
 
 const Introduction = () => {
   return (

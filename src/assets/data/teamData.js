@@ -1,7 +1,6 @@
 // teamData.js
 
-import teamImg1 from '../image/vector/60111.jpg'
-import teamImg2 from '../image/vector/60111.jpg'
+import teamImg1 from '../image/vector/60111.webp'
 
 
 const teamData = [
@@ -15,7 +14,7 @@ const teamData = [
   },
   {
     id: 2,
-    image: teamImg2,
+    image: teamImg1,
     linkedin: '',
     facebook: '',
     instagram: '',
@@ -23,7 +22,7 @@ const teamData = [
   },
   {
     id: 3,
-    image: teamImg2,
+    image: teamImg1,
     linkedin: '',
     facebook: '',
     instagram: '',
@@ -31,7 +30,7 @@ const teamData = [
   },
   {
     id: 4,
-    image: teamImg2,
+    image: teamImg1,
     linkedin: '',
     facebook: '',
     instagram: '',
@@ -47,7 +46,7 @@ const teamData = [
   },
   {
     id: 6,
-    image: teamImg2,
+    image: teamImg1,
     linkedin: '',
     facebook: '',
     instagram: '',
@@ -55,7 +54,7 @@ const teamData = [
   },
   {
     id: 7,
-    image: teamImg2,
+    image: teamImg1,
     linkedin: '',
     facebook: '',
     instagram: '',
@@ -63,7 +62,7 @@ const teamData = [
   },
   {
     id: 8,
-    image: teamImg2,
+    image: teamImg1,
     linkedin: '',
     facebook: '',
     instagram: '',

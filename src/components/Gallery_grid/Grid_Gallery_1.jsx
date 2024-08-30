@@ -1,15 +1,15 @@
 import React from "react";
 
 // imgs
-import img1 from "../../assets/image/people/chairWomen/chairwomen.jpg";
-import img2 from "../../assets/image/program/yoga/yoga.jpg";
-import img3 from "../../assets/image/people/grpbannerhold.jpg";
-import img4 from "../../assets/image/program/art/art.jpg";
+import img1 from "../../assets/image/people/chairWomen/chairwomen.webp";
+import img2 from "../../assets/image/program/yoga/yoga.webp";
+import img3 from "../../assets/image/useables/grpbannerhold.webp";
+import img4 from "../../assets/image/program/art/art.webp";
 
 // texture images
-import taxture from "../../assets/texture/bg-texture/white_linen_texture.jpg";
-import butterfly from "../../assets/texture/assets icon/rainbow-butterfly.webp";
-import rainbowWave from "../../assets/texture/assets icon/rainbow-wave.jpg";
+import taxture from "../../assets/texture/bg-texture/white_linen_texture.webp";
+import butterfly from "../../assets/image/vector/rainbow-butterfly.webp";
+
 
 // splash images
 import splashRed from "../../assets/texture/splash/modern-red-watercolor.png";

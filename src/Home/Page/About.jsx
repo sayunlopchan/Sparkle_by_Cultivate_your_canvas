@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 
 // img
-import group from '../../assets/image/people/group.jpg'
+import group from '../../assets/image/useables/group.webp'
+
 
 
 // social icons
@@ -13,6 +14,7 @@ import { NavLink } from 'react-router-dom';
 
 import teamData from '../../assets/data/teamData';
 import StaticHeader from '../../components/StaticHeader/StaticHeader';
+import Useable from '../../components/Useable/Useable';
 
 const About = () => {
 
@@ -25,7 +27,12 @@ const About = () => {
   return (
     <div className='bg-[#CCE0FF]'>
       <StaticHeader />
-      <div className='p-10  pb-10 lg:p-20 space-y-20'>
+      <Useable
+        message={"Sparkle by CYC"}
+        mainText={"Empowering Tomorrow's Sparkling Leaders Today"}
+        subText={"Let Your Child Sparkle"}
+      />
+      <div className='p-10 pb-10 lg:p-20 space-y-20'>
 
 
         {/* grid */}

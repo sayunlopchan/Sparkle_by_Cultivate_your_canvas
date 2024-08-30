@@ -9,10 +9,10 @@ import logo from '../../assets/logo/Sparkle By CYC.svg'
 const StaticHeader = () => {
   return (
     <>
-      <header className='static-header '>
+      <header className='static-header shadow-lg'>
         <div className='static-logo'>
           <NavLink to={"/"}>
-            <img src={logo} alt="Sparkle logo" className='size-[80px]' />
+            <img src={logo} alt="Sparkle logo" className='size-[80px] p-2' />
           </NavLink>
         </div>
 

@@ -23,10 +23,16 @@ export default {
             borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%',
           },
         },
+        pulse: {
+          '0%': { opacity: '0.75' },
+          '50%': { opacity: '1' },
+          '100%': { opacity: '0.75' },
+        },
       },
       animation: {
-        animate: 'animate 5s infinite',
-        blob: 'animate 5s infinite',
+        'fast-pulse': 'pulse 1s ease-in-out infinite',
+        'animate': 'animate 5s infinite',
+        'blob': 'blob 5s infinite',
       },
       fontFamily: {
         'qwitcher': ['Qwitcher Grypen', 'cursive'],

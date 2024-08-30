@@ -1,17 +1,17 @@
 import React from 'react'
 // images
-import ChairWomenPicture from '../../assets/image/people/chairWomen/chairwomen.jpg'
-import Picture1 from '../../assets/image/program/art/art.jpg'
-import Picture2 from '../../assets/image/people/chairWomen/chairwomen1.jpg'
+import ChairWomenPicture from '../../assets/image/people/chairWomen/chairwomen.webp'
+import Picture1 from '../../assets/image/program/art/art.webp'
+import Picture2 from '../../assets/image/people/chairWomen/chairwomen1.webp'
 
 
 // bg taxture
-import texture from '../../assets/texture/bg-texture/white_linen_texture.jpg'
+import texture from '../../assets/texture/bg-texture/white_linen_texture.webp'
 
 // icon image
-import pin from '../../assets/texture/assets icon/red-drawing-pin.png'
-import plane from '../../assets/texture/assets icon/paper-airplane-with-dot.png'
-import book from '../../assets/texture/assets icon/books.png'
+import pin from '../../assets/image/vector/red-drawing-pin.webp'
+import plane from '../../assets/image/vector/paper-airplane-with-dot.webp'
+import book from '../../assets/image/vector/books.webp'
 
 
 // animation
@@ -49,11 +49,11 @@ const ChairWomenMessage = () => {
           <AnimatedComponent2>
             <div className='relative lg:h-full lg:w-full h-[300px] w-[350px] '>
               {/* pin */}
-              <img src={pin} alt="push pin" className='absolute z-10 size-10 md:-top-[15%] lg:-top-[15%] left-[6%] ' />
+              <img src={pin} alt="push pin" className='absolute z-10 size-10 md:-top-[15%] lg:-top-3 right-[32%] rotate-45' />
 
               <img src={pin} alt="push pin" className='absolute z-10 size-5 top-[43%] left-[2%] ' />
 
-              <img src={pin} alt="push pin" className='absolute z-10 size-5 top-[3%] left-[75%] ' />
+              <img src={pin} alt="push pin" className='absolute z-10 size-5 -top-[10%] left-[75%]' />
 
               {/* books */}
               <img src={book} alt="plane" className='absolute z-10 size-[200px] lg:top-[200px] max-lg:hidden md:-right-[60%] lg:right-[2%]' />

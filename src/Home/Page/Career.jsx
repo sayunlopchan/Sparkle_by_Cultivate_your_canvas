@@ -7,7 +7,7 @@ import StaticHeader from '../../components/StaticHeader/StaticHeader';
 const Career = () => {
   const nav = useNavigate();
   return (
-    <div className='w-[100vw]'>
+    <div className='w-[100vw] bg-[#CCE0FF]'>
       <StaticHeader />
       <div className='h-[60vh] w-full flex justify-center items-center'>
         <div className='space-y-3'>

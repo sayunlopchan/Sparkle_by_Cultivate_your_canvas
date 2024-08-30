@@ -37,31 +37,36 @@ const FAQ = () => {
   };
 
   return (
-    <>
-      <div className="p-10 space-y-5 bg-cover bg-center lg:h-[600px]  relative overflow-hidden">
-        <h1 className="font-bold text-2xl py-5">FAQs for Parents</h1>
+    <div className="p-10 space-y-5 bg-cover bg-center lg:h-[600px] relative overflow-hidden">
+      <h1 className="font-bold text-2xl py-5">FAQs for Parents</h1>
 
-        <img src={littleGirl} alt="little girl" className="absolute h-[400px] -right-20 bottom-0 -z-10 max-md:hidden" />
+      <img
+        src={littleGirl}
+        alt="little girl"
+        className="absolute h-[400px] -right-20 bottom-0 -z-10 max-md:hidden"
+        loading="lazy" // Lazy load image
+      />
 
-        {Faqdata.map((item, idx) => (
+      {Faqdata.map((item, idx) => (
+        <div
+          key={idx}
+          className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-colors duration-300 ease-in-out ${openFAQIndex === idx ? "bg-orange-500 text-white" : "bg-white"
+            }`}
+          onClick={() => handleFAQ(idx)}
+        >
+          <h1 className={`font-semibold ${openFAQIndex === idx ? 'border-b border-white border-dashed' : ''}`}>
+            {item.Question}
+          </h1>
+          {/* FAQ answer with optimized transition */}
           <div
-            key={idx}
-            className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-all duration-300 ${openFAQIndex === idx ? "bg-orange-500 text-white" : ""
+            className={`overflow-hidden transition-all duration-300 ease-in-out ${openFAQIndex === idx ? "opacity-100 h-auto" : "opacity-0 h-0"
               }`}
-            onClick={() => handleFAQ(idx)}
           >
-            <h1 className={`font-semibold ${openFAQIndex === idx ? 'border-b border-white border-dashed' : ''}`}>{item.Question}</h1>
-            {/* FAQ answer with animation */}
-            <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${openFAQIndex === idx ? "max-h-screen" : "max-h-0"
-                }`}
-            >
-              <p className="mt-2b pt-4 text-white">{item.answer}</p>
-            </div>
+            <p className="mt-2 pt-4">{item.answer}</p>
           </div>
-        ))}
-      </div>
-    </>
+        </div>
+      ))}
+    </div>
   );
 };
 

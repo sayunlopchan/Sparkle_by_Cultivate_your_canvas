@@ -1,9 +1,9 @@
 import React from "react";
 
 
-import ExperiencedInstructors from "../assets/texture/useableImages/ExperiencedInstructors.png";
+import ExperiencedInstructors from "../assets/texture/useableImages/ExperiencedInstructors.webp";
 
-import HolisticDevelopment from "../assets/texture/useableImages/HolisticDevelopment.png";
+import HolisticDevelopment from "../assets/texture/useableImages/HolisticDevelopment.webp";
 
 import SafeSecureEnvironment from "../assets/texture/useableImages/Safe & Secure Environment.webp";
 
@@ -11,7 +11,10 @@ import ParentInvolvement from "../assets/texture/useableImages/parental-involvem
 
 import FlexiblePrograms from "../assets/texture/useableImages/Flexible Programs.jpg";
 
-import CreativeLearning from "../assets/texture/useableImages/nursery_teacher_3.jpg";
+import CreativeLearning from "../assets/texture/useableImages/nursery_teacher_3.webp";
+
+
+
 import AnimatedComponent2 from "./Animation/AnimatedComponent2";
 
 

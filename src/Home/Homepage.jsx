@@ -10,8 +10,6 @@ import Slider from '../components/HomeSlider/Slider'
 import ChairWomenMessage from '../components/introduction/ChairWomenMessage'
 import WhyChooseUs from '../components/WhyChooseUs'
 import FAQ from '../components/FAQ/FAQ'
-import ImageGralleySkeleton from '../components/skeleton/imageGralleySkeleton'
-
 
 
 
@@ -31,7 +29,6 @@ const Homepage = () => {
       <GridGallery_2 />
       <WhyChooseUs />
       <FAQ />
-      {/* <ImageGralleySkeleton /> */}
     </div >
   )
 }
