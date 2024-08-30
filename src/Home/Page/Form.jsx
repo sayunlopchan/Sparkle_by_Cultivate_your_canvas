@@ -7,6 +7,60 @@ import AnimatedComponent from '../../components/Animation/AnimatedComponent';
 import AnimatedComponent2 from '../../components/Animation/AnimatedComponent2';
 
 const Form = () => {
+
+  const admissionProcessData = [
+    {
+      type: 'heading',
+      content: 'Admission Process for Incoming Students',
+      className: 'text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl'
+    },
+    {
+      type: 'subheading',
+      content: 'If you prefer immediate answers',
+      className: 'font-semibold text-[15px] lg:text-xl'
+    },
+    {
+      type: 'icon',
+      content: '9857049590',
+      icon: <IoPhonePortrait size={25} />,
+    },
+    {
+      type: 'icon',
+      content: '01-5409722',
+      icon: <BsFillTelephoneForwardFill size={25} />,
+    }
+  ];
+
+
+
+
+  const processes = [
+    {
+      step: 1,
+      title: "Inquire",
+      description: "Contact us for inquiries at admin@sparklenepal.com or +977-9857049590. Expect a reply to learn more about your child.",
+    },
+    {
+      step: 2,
+      title: "Meeting Interview",
+      description: "Upon receiving your inquiries, one of our teachers will schedule a meeting interview with the parent/ guardian.",
+    },
+    {
+      step: 3,
+      title: "Pre-evaluation",
+      description: "To evaluate the student, attend class to observe interaction. Schedule a trial class and on-site assessment.",
+    },
+    {
+      step: 4,
+      title: "Enrollment",
+      description: "Submit a physical or digital copies of the required documents to enroll. You’ll receive an email confirming receipt and next steps.",
+    }
+  ];
+
+
+
+
+
   return (
     <div classNameName='w-[100vw]'>
 
@@ -109,85 +163,49 @@ const Form = () => {
 
       </div>
 
-      {/* process */}
+      {/* processes */}
       <div className='grid grid-cols-1 lg:grid-cols-2 p-10 space-y-10'>
-        <div className='space-y-5'>
-          <AnimatedComponent>
-
-            <h1 className='text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl animation-disapp'>
-              Admission Process for Incoming Students
-            </h1>
-          </AnimatedComponent>
-          <AnimatedComponent>
-            <h2 className='font-semibold text-[15px] lg:text-xl animation-disapp'>if you prefer immediate answers</h2>
-          </AnimatedComponent>
-          {/* icons */}
-          <div className='space-y-2 '>
-            <AnimatedComponent>
-              <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
-                <IoPhonePortrait size={25} /> 9857049590
-              </p>
+        <div className='space-y-5 lg:mt-10'>
+          {admissionProcessData.map((item, index) => (
+            <AnimatedComponent key={index}>
+              {item.type === 'heading' && (
+                <h1 className={`${item.className} lg:w-[70%]`}>
+                  {item.content}
+                </h1>
+              )}
+              {item.type === 'subheading' && (
+                <h2 className={`${item.className}`}>
+                  {item.content}
+                </h2>
+              )}
+              {item.type === 'icon' && (
+                <a href={`tel:${item.content}`} className='flex gap-3 cursor-pointer hover:underline underline-offset-2 w-fit'>
+                  {item.icon} {item.content}
+                </a>
+              )}
             </AnimatedComponent>
-            <AnimatedComponent>
-              <p className='flex gap-3 animation-disapp cursor-pointer hover:underline underline-offset-2 w-fit'>
-                <BsFillTelephoneForwardFill size={25} /> 01-5409722</p>
-            </AnimatedComponent>
-
-          </div>
+          ))}
         </div>
+
         <div>
           <ul className='space-y-10'>
-            {/* process 1 */}
-            <li className='animation-disapp'>
-              <AnimatedComponent2>
-                <div className='flex items-center gap-4 '>
-                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>1</div>
-                  <h1 className='text-lg font-bold text-orange-400'>Inquire</h1>
-                </div>
-                <div className='ml-20 text-sm font-semibold'>
-                  <p>Contact us for inquiries at <span>admin@sparklenepal.com</span> or <span>+977-9857049590</span>. Expect a reply to learn more about your child.
-                  </p>
-                </div>
-              </AnimatedComponent2>
-            </li>
-            {/* process 2 */}
-            <li className='animation-disapp'>
-              <AnimatedComponent2>
-                <div className='flex items-center gap-4'>
-                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>2</div>
-                  <h1 className='text-lg font-bold text-orange-400'>Meeting Interview</h1>
-                </div>
-                <div className='ml-20 text-sm font-semibold'>
-                  <p>Upon receiving your inquiries, one of our teachers will schedule a meeting interview with the parent/ guardian.
-                  </p>
-                </div>
-              </AnimatedComponent2>
-            </li>
-            {/* process 3 */}
-            <li className='animation-disapp'>
-              <AnimatedComponent2>
-                <div className='flex items-center gap-4'>
-                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>3</div>
-                  <h1 className='text-lg font-bold text-orange-400'>Pre-evaluation</h1>
-                </div>
-                <div className='ml-20 text-sm font-semibold'>
-                  <p>To evaluate the student, attend class to observe interaction. Schedule a trial class and on-site assessment.
-                  </p>
-                </div>
-              </AnimatedComponent2>
-            </li>
-            {/* process 4 */}
-            <li className='animation-disapp'>
-              <AnimatedComponent2>
-                <div className='flex items-center gap-4'>
-                  <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>4</div>
-                  <h1 className='text-lg font-bold text-orange-400'>Enrollment</h1>
-                </div>
-                <div className='ml-20 text-sm font-semibold'>
-                  <p>Submit a physical or digital copies of the required documents to enroll. You’ll receive an email confirming receipt and next steps.</p>
-                </div>
-              </AnimatedComponent2>
-            </li>
+            {processes.map((process, index) => (
+              <li key={index}>
+                <AnimatedComponent2>
+                  <div className='flex items-center gap-4'>
+                    <div className='size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white'>
+                      {process.step}
+                    </div>
+                    <h1 className='text-lg font-bold text-orange-400'>
+                      {process.title}
+                    </h1>
+                  </div>
+                  <div className='ml-[65px] text-sm font-semibold'>
+                    <p>{process.description}</p>
+                  </div>
+                </AnimatedComponent2>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

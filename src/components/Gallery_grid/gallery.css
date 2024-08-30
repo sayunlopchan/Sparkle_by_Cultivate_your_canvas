@@ -13,9 +13,7 @@
 .butterfly {
   @apply absolute z-10 size-[70px] lg:size-[100px] mix-blend-multiply bottom-[42%] rotate-[40deg];
 }
-.rainbowWave {
-  @apply absolute z-10 w-full mix-blend-multiply bottom-[5%];
-}
+
 .grid-img {
   @apply h-fit border-4;
 }

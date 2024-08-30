@@ -46,7 +46,7 @@ const FAQ = () => {
         {Faqdata.map((item, idx) => (
           <div
             key={idx}
-            className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-colors duration-500 ${openFAQIndex === idx ? "bg-orange-500 text-white" : ""
+            className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-all duration-300 ${openFAQIndex === idx ? "bg-orange-500 text-white" : ""
               }`}
             onClick={() => handleFAQ(idx)}
           >

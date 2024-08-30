@@ -21,11 +21,11 @@ const GridGallery_2 = () => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !entry.target.classList.contains('in-view')) {
             entry.target.classList.add('in-view');
-            observer.unobserve(entry.target); // Stop observing once the class is added
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the image is visible
+      { threshold: 0.2 } // Trigger when 20% of the image is visible
     );
 
     galleryRef.current.forEach((el) => {
@@ -44,7 +44,13 @@ const GridGallery_2 = () => {
   }, []);
 
 
-
+  ImageData = [
+    { image: img1 },
+    { image: img2 },
+    { image: img3 },
+    { image: img4 },
+    { image: img5 },
+  ]
 
 
   return (
@@ -53,39 +59,18 @@ const GridGallery_2 = () => {
         className='grid-gallery-box-2 '
         ref={(el) => (galleryRef.current[0] = el)}
       >
-
-        <div
-          className="grid-img-box-2 "
-          style={{ backgroundImage: `url(${img1})` }}
-        />
-
-        <div
-          className="grid-img-box-2 "
-          style={{ backgroundImage: `url(${img2})` }}
-        />
-
-        <div
-          className="grid-img-box-2"
-          style={{ backgroundImage: `url(${img3})` }}
-        />
-
-        <div
-          className="grid-img-box-2 "
-          style={{ backgroundImage: `url(${img4})` }}
-        />
-        <div
-          className="grid-img-box-2"
-          style={{ backgroundImage: `url(${img5})` }}
-        />
-
+        {ImageData.map((item, idx) => (
+          <div key={idx}
+            className="grid-img-box-2 "
+            style={{ backgroundImage: `url(${item.image})` }}
+          />
+        ))}
       </div>
       <div className='md:hidden px-5'>
         <div className='flex gap-5 overflow-x-scroll snap-mandatory'>
-          <img src={img1} alt="img" className='swpier-img w-[300px] h-[200px] snap-center' />
-          <img src={img2} alt="img" className='swpier-img w-[300px] h-[200px] snap-center' />
-          <img src={img3} alt="img" className='swpier-img w-[300px] h-[200px] snap-center' />
-          <img src={img4} alt="img" className='swpier-img w-[300px] h-[200px] snap-center' />
-          <img src={img5} alt="img" className='swpier-img w-[300px] h-[200px] snap-center' />
+          {ImageData.map((item, idx) => (
+            <img key={idx} src={item.image} alt="img" className='swpier-img w-[300px] h-[200px] snap-center' />
+          ))}
         </div>
       </div>
     </div>

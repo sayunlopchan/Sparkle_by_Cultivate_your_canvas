@@ -28,6 +28,35 @@ import AnimatedComponent2 from "../Animation/AnimatedComponent2";
 // animation
 
 const GridGallery_1 = () => {
+
+  const gridImg = [
+    { image: img1 },
+    { image: img2 },
+    { image: img3 },
+    { image: img4 },
+  ]
+
+
+  const textData = [
+    {
+      heading: "Empowering Young Minds, Shaping Nepal's Future Leaders Through Creativity and Confidence.",
+      description:
+        "At Sparkle Kids Academy, we nurture young minds by fostering creativity and confidence, equipping Nepal's future leaders with essential life skills for success in an ever-changing world. Our programs are designed to inspire and empower children to reach their full potential.",
+    },
+    {
+      heading: "",
+      description: "Explore our diverse offerings:",
+    },
+  ];
+
+  const offerings = [
+    { image: splashRed, text: 'Art' },
+    { image: splashGreen, text: 'Yoga' },
+    { image: splashYelow, text: 'Public Speaking' },
+    { image: splashOrange, text: 'Dance' },
+    { image: splashPink, text: 'Personality Development' },
+  ]
+
   return (
     <div className="grid-gallary-1-container ">
       {/* img */}
@@ -35,23 +64,18 @@ const GridGallery_1 = () => {
         <AnimatedComponent>
           <img src={butterfly} alt="butterfly" className="butterfly" />
           <img src={butterfly} alt="butterfly" className="butterfly" />
-          <img src={rainbowWave} alt="rainbowWave" className="rainbowWave" />
           <div
             className="grid-gallery-imgs-grid-box"
             style={{ backgroundImage: `url(${taxture})` }}
           >
-            <div className="grid-img ">
-              <img src={img1} alt="img" />
-            </div>
-            <div className="grid-img ">
-              <img src={img2} alt="" />
-            </div>
-            <div className="grid-img ">
-              <img src={img3} alt="" />
-            </div>
-            <div className="grid-img ">
-              <img src={img4} alt="" />
-            </div>
+            {
+              gridImg.map((item, idx) => (
+
+                <div key={idx} className="grid-img ">
+                  <img src={item.image} alt={item.image} />
+                </div>
+              ))
+            }
           </div>
         </AnimatedComponent>
       </div>
@@ -59,78 +83,26 @@ const GridGallery_1 = () => {
       {/* text */}
       <div className="grid-gallery-1-container-box ">
         <div className="w-full space-y-5">
-          <AnimatedComponent2>
-            <h1 className="text-red-500 font-[500] text-4xl ">
-              Empowering Young Minds, Shaping Nepal's Future Leaders Through
-              Creativity and Confidence.
-            </h1>
-          </AnimatedComponent2>
-
-          <AnimatedComponent2>
-            <p className="p-text italic ">
-              At Sparkle Kids Academy, we nurture young minds by fostering
-              creativity and confidence, equipping Nepal's future leaders with
-              essential life skills for success in an ever-changing world. Our
-              programs are designed to inspire and empower children to reach
-              their full potential.
-            </p>
-          </AnimatedComponent2>
-
-          <AnimatedComponent2>
-            <p className="p-text ">Explore our diverse offerings:</p>
-          </AnimatedComponent2>
+          {textData.map((item, index) => (
+            <AnimatedComponent2 key={index}>
+              {item.heading && (
+                <h1 className="text-red-500 font-[500] text-4xl ">
+                  {item.heading}
+                </h1>
+              )}
+              <p className="p-text italic ">{item.description}</p>
+            </AnimatedComponent2>
+          ))}
 
           <ul className="card-ul">
-            <AnimatedComponent2>
-              <li>
-                <img src={splashRed} alt="red-splash" className="size-[50px]" />
-                Art
-              </li>
-            </AnimatedComponent2>
-
-            <AnimatedComponent2>
-              <li>
-                <img
-                  src={splashGreen}
-                  alt="red-splash"
-                  className="size-[50px]"
-                />
-                Yoga
-              </li>
-            </AnimatedComponent2>
-
-            <AnimatedComponent2>
-              <li>
-                <img
-                  src={splashYelow}
-                  alt="red-splash"
-                  className="size-[50px]"
-                />
-                Public speaking
-              </li>
-            </AnimatedComponent2>
-
-            <AnimatedComponent2>
-              <li>
-                <img
-                  src={splashOrange}
-                  alt="red-splash"
-                  className="size-[50px]"
-                />
-                Dance
-              </li>
-            </AnimatedComponent2>
-
-            <AnimatedComponent2>
-              <li>
-                <img
-                  src={splashPink}
-                  alt="red-splash"
-                  className="size-[50px]"
-                />
-                Personality development
-              </li>
-            </AnimatedComponent2>
+            {offerings.map((offer, idx) => (
+              <AnimatedComponent2 key={idx}>
+                <li>
+                  <img src={offer.image} alt="red-splash" className="size-[50px]" />
+                  {offer.text}
+                </li>
+              </AnimatedComponent2>
+            ))}
           </ul>
         </div>
       </div>

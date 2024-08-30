@@ -1,9 +1,13 @@
 import React from 'react'
 
-const imageGralleySkeleton = () => {
+const ImageGralleySkeleton = () => {
   return (
-    <div>imageGralleySkeleton</div>
+    <div className='h-[100vh] w-full'>
+      <div className='flex gap-10'>
+        <div className='px-4 py-2 bg-red-400'>s</div>
+      </div>
+    </div>
   )
 }
 
-export default imageGralleySkeleton
+export default ImageGralleySkeleton
