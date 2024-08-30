@@ -97,8 +97,6 @@
 /* Slider Thumbnails */
 .slider-thumbnail img {
   @apply size-[100px] lg:size-[140px] shadow-2xl;
-  height: 100px;
-  width: 100px;
   object-fit: cover;
   border: 2px solid white;
   border-radius: 12px;

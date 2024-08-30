@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./slider.css";
-// header component
 import SliderHeader from "../StaticHeader/SliderHeader";
 
 // images
@@ -47,18 +46,18 @@ const Slider = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleNext = () => {
-    if (isTransitioning) return; // Prevent action during transition
+    if (isTransitioning) return;
     setIsTransitioning(true);
     setAnimationClass("slide-out-next");
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % SliderData.length);
       setAnimationClass("slide-in-next");
       setIsTransitioning(false);
-    }, 300); // Match this with your slide-out duration
+    }, 300);
   };
 
   const handlePrev = () => {
-    if (isTransitioning) return; // Prevent action during transition
+    if (isTransitioning) return;
     setIsTransitioning(true);
     setAnimationClass("slide-out-prev");
     setTimeout(() => {
@@ -67,14 +66,13 @@ const Slider = () => {
       );
       setAnimationClass("slide-in-prev");
       setIsTransitioning(false);
-    }, 300); // Match this with your slide-out duration
+    }, 300);
   };
 
   useEffect(() => {
     const intervalId = setInterval(handleNext, 6000);
-    // Cleanup interval on component unmount
     return () => clearInterval(intervalId);
-  }, [isTransitioning]); // Add isTransitioning as a dependency
+  }, [isTransitioning]);
 
   return (
     <div className="slider-container">
@@ -82,6 +80,7 @@ const Slider = () => {
       <header className="slider-header">
         <SliderHeader />
       </header>
+
       {/* swiper */}
       <div
         className={`swiper-container bg-${animationClass}`}
@@ -104,7 +103,8 @@ const Slider = () => {
             className={`slider-thumbnail ${idx === currentIndex ? "active-thumbnail" : ""
               }`}
           >
-            <img src={item.img} alt={item.title} />
+            {/* Lazy loading */}
+            <img src={item.img} alt={item.title} loading="lazy" />
           </div>
         ))}
       </div>
