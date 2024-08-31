@@ -50,16 +50,7 @@ const WhyChooseUs = () => {
       title: "Creative Learning",
       p: "Our curriculum is designed to spark imagination and creativity, making learning fun and engaging for every child.",
     },
-    // {
-    //   image: queriousPeople,
-    //   title: "Proven Results",
-    //   p: "Our programs are designed to bring out the best in every child, helping them shine both academically and personally.",
-    // },
-    // {
-    //   image: queriousPeople,
-    //   title: "Positive Environmentg",
-    //   p: "We foster a supportive and encouraging atmosphere where children feel confident to explore and express themselves.",
-    // },
+
   ];
 
   return (
@@ -67,9 +58,9 @@ const WhyChooseUs = () => {
       {/* heading */}
       <div className="text-center space-y-5 px-10">
 
-        <h1 className="text-md lg:text-lg font-semibold p-2 mx-auto bg-orange-300 rounded-3xl w-fit">Escape the traditional teaching</h1>
+        <h1 className="text-sm lg:text-lg font-semibold p-2 mx-auto bg-orange-300 rounded-3xl w-fit">Escape the traditional teaching</h1>
 
-        <div className="text-[16px] md:text-lg lg:text-4xl font-semibold text-orange-400">
+        <div className="text-lg lg:text-4xl font-semibold text-orange-400">
           <h2>Benefits of The Sparkle Kids Academy</h2>
           <h3>Progressive Education Program</h3>
         </div>

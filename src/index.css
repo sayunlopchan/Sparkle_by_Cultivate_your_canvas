@@ -15,24 +15,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --theme-red: #e3191a;
-  --theme-blue: #1d78b4;
-  --theme-green: #32a02b;
-  --theme-orange: #ff7f00;
-}
-
 body {
   min-width: 320px;
   margin: 0px auto;
-}
-
-/* for header active nav */
-.active-link {
-  color: white;
-  border: 2px solid white;
-  background-color: #ffa500;
-  padding: 10px 30px;
 }
 
 /* Card list  */

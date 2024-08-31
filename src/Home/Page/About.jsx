@@ -76,8 +76,8 @@ const About = () => {
                 <p className='text-[12px] text-gray-700'>Positive Reviews</p>
               </div>
               <div className='px-3 py-4  w-[200px] bg-gray-50 rounded-2xl'>
-                <h1 className='text-lg font-bold'>1000+</h1>
-                <p className='text-[12px] text-gray-700'>Successful Voices</p>
+                <h1 className='text-lg font-bold'>500+</h1>
+                <p className='text-[12px] text-gray-700'>Successful Stories</p>
               </div>
             </div>
           </div>

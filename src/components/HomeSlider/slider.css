@@ -92,7 +92,7 @@
 
 /* Slider Thumbnails */
 .slider-thumbnail img {
-  @apply size-[60px] lg:size-[140px] shadow-2xl;
+  @apply size-[90px] lg:size-[140px] shadow-2xl;
   object-fit: cover;
   border: 2px solid white;
   border-radius: 12px;
@@ -107,12 +107,12 @@
 
 /* Slider Button Container */
 .slider-btn-container {
-  @apply absolute left-10 max-sm:bottom-10 bottom-10 z-10 flex gap-3 text-white;
+  @apply absolute left-10 max-sm:bottom-20 bottom-10 z-10 flex gap-3 text-white;
 }
 
 /* Slider Button */
 .slider-btn {
-  @apply h-10 w-10 rounded-full border-2 border-white shadow-lg shadow-gray-600;
+  @apply size-14 rounded-full border-2 border-white shadow-lg shadow-gray-600;
 }
 
 /* Slide-in and Slide-out Animations for Content */

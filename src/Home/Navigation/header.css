@@ -1,32 +1,18 @@
 .root-header {
-  font-size: 20px;
-  position: sticky;
-  z-index: 10000;
-  top: -100px;
-  margin-top: -80px;
-  transition: 0.2s;
-  display: flex;
-  height: 80px;
-  width: 100vw;
-  justify-content: space-between;
-  align-items: center;
-  color: rgb(65, 62, 62);
+  @apply fixed text-[20px] top-0 left-0 w-full transition-transform duration-300 flex justify-between px-10 items-center z-20 text-gray-800;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
-  padding: 0px 40px;
-  overflow-x: hidden;
 }
 
 .root-navlink-link {
-  padding: 10px 20px;
-  z-index: 20;
-  position: relative;
-  transition: 0.3s;
+  @apply py-[10px] px-5 z-20 transition-all duration-1000;
 }
 
 .root-navlink-link:hover {
-  color: white;
-  border: 2px solid white;
-  background-color: #ffa500;
-  padding: 10px 30px;
+  @apply text-white border-2 border-white bg-[#ffa500] py-[10px] px-[30px];
+}
+
+/* for header active nav */
+.active-link {
+  @apply py-[10px] px-5 text-white border-2 border-white bg-[#ffa500];
 }

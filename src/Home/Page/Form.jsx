@@ -85,7 +85,7 @@ const Form = () => {
               type="text"
               id="full_name"
               name="full_name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
               required
             />
           </div>
@@ -98,7 +98,7 @@ const Form = () => {
               type="text"
               id="parent_name"
               name="parent_name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
               required
             />
           </div>
@@ -113,7 +113,7 @@ const Form = () => {
               id="email"
               name="email"
               placeholder="optional"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
             />
           </div>
 
@@ -126,7 +126,7 @@ const Form = () => {
               type="tel"
               id="phone"
               name="phone"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
               required
             />
           </div>
@@ -140,7 +140,7 @@ const Form = () => {
               type="date"
               id="dob"
               name="dob"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
               required
             />
           </div>
@@ -153,7 +153,7 @@ const Form = () => {
             <select
               id="program"
               name="program"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
               required
             >
               <option value="" disabled selected>
@@ -203,7 +203,7 @@ const Form = () => {
               id="address"
               name="address"
               rows="3"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none  "
               required
             ></textarea>
           </div>
@@ -212,7 +212,7 @@ const Form = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none  "
             >
               Submit
             </button>

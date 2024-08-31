@@ -35,7 +35,13 @@ export default {
         'blob': 'blob 5s infinite',
       },
       fontFamily: {
-        'qwitcher': ['Qwitcher Grypen', 'cursive'],
+        // 'qwitcher': ['Qwitcher Grypen', 'cursive'],
+      },
+      colors: {
+        'theme-red': 'var(--theme-red)',
+        'theme-blue': 'var(--theme-blue)',
+        'theme-green': 'var(--theme-green)',
+        'theme-orange': 'var(--theme-orange)',
       },
     },
   },

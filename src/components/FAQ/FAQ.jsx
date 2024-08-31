@@ -54,7 +54,7 @@ const FAQ = () => {
             }`}
           onClick={() => handleFAQ(idx)}
         >
-          <h1 className={`font-semibold transition-colors duration-500 ${openFAQIndex === idx ? 'border-b border-white border-dashed' : ''}`}>
+          <h1 className={`font-semibold transition-all duration-300 ${openFAQIndex === idx ? 'border-b border-white border-dashed' : ''}`}>
             {item.Question}
           </h1>
           {/* FAQ answer with synchronized close and text disappearance */}
