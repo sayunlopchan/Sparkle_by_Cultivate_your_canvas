@@ -130,7 +130,6 @@ const ImageGallery = () => {
           </div>
         )}
       </div>
-      <GalleySkeleton />
     </div>
   );
 }

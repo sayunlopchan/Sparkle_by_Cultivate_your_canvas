@@ -11,8 +11,8 @@ const Useable = ({ message, mainText, subText }) => {
               {message}
             </span>
             <div className="font-semibold">
-              <h1 className='text-4xl'>{mainText}</h1>
-              <h2 className='text-xl'>{subText}</h2>
+              <h1 className='text-lg lg:text-4xl'>{mainText}</h1>
+              <h2 className='text-sm lg:text-xl'>{subText}</h2>
             </div>
           </div>
         </div>

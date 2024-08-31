@@ -87,7 +87,7 @@
 
 /* Thumbnail Container */
 .thumbnail-container {
-  @apply flex flex-col lg:flex-row gap-5 absolute bottom-4 right-2 lg:right-2 z-10;
+  @apply flex flex-col lg:flex-row gap-5 absolute bottom-20 md:bottom-4 right-2 lg:right-2 z-10;
 }
 
 /* Slider Thumbnails */
