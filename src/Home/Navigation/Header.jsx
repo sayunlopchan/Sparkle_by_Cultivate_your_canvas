@@ -110,49 +110,48 @@ const Header = () => {
         ref={drawerRef}
         className={`bg-white text-black fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] transform transition-transform duration-300 z-50 overflow-hidden ${isOpen ? "translate-x-0" : "translate-x-full"
           }`}
-        style={{ overflowY: "auto", overflowX: "hidden" }} // Adjust overflow as needed
-      >
+        style={{ overflowY: "auto", overflowX: "hidden" }} 
         <div className="flex justify-center items-center p-2">
-          <div className="mx-auto">
-            <img src={logo} alt="Sparkle logo" className='w-[80px]' />
-          </div>
-        </div>
-
-        <div>
-          {navLinks.map((link, index) => (
-            <NavLink
-              key={index}
-              to={link.path}
-              className={({ isActive }) =>
-                `block py-2 px-4 border-b duration-500 ${isActive ? "bg-orange-500 text-white" : "hover:bg-gray-300"}`
-              }
-              onClick={() => setIsOpen(false)} // Close drawer on link click
-            >
-              {link.name}
-            </NavLink>
-          ))}
-        </div>
-
-        {/* Social Links */}
-        <div className="social-links text-center space-y-3 mt-6">
-          <h1>Follow us</h1>
-          <div className="flex justify-center gap-3">
-            {socialLinks.map((link, index) => (
-              <a key={index} href={link.href} aria-label={link.name}>
-                {link.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* Close Drawer Button */}
-        <div className="flex justify-center items-center mt-10">
-          <button onClick={toggleDrawer}>
-            <IoClose size={40} />
-          </button>
+        <div className="mx-auto">
+          <img src={logo} alt="Sparkle logo" className='w-[80px]' />
         </div>
       </div>
-    </header>
+
+      <div>
+        {navLinks.map((link, index) => (
+          <NavLink
+            key={index}
+            to={link.path}
+            className={({ isActive }) =>
+              `block py-2 px-4 border-b duration-500 ${isActive ? "bg-orange-500 text-white" : "hover:bg-gray-300"}`
+            }
+            onClick={() => setIsOpen(false)} // Close drawer on link click
+          >
+            {link.name}
+          </NavLink>
+        ))}
+      </div>
+
+      {/* Social Links */}
+      <div className="social-links text-center space-y-3 mt-6">
+        <h1>Follow us</h1>
+        <div className="flex justify-center gap-3">
+          {socialLinks.map((link, index) => (
+            <a key={index} href={link.href} aria-label={link.name}>
+              {link.icon}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Close Drawer Button */}
+      <div className="flex justify-center items-center mt-10">
+        <button onClick={toggleDrawer}>
+          <IoClose size={40} />
+        </button>
+      </div>
+    </div>
+    </header >
   );
 };
 

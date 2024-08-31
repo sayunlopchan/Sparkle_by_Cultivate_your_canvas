@@ -12,6 +12,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 
@@ -25,7 +26,6 @@
 body {
   min-width: 320px;
   margin: 0px auto;
-  overflow-x: hidden;
 }
 
 /* for header active nav */
