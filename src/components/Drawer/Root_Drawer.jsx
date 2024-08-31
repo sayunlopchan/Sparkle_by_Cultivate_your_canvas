@@ -1,12 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-
-// react icons
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
-// logo
 import logo from '../../assets/logo/Sparkle By CYC.svg';
 
 const socialLinks = [
@@ -60,7 +56,7 @@ const Root_Drawer = () => {
   }, [isOpen]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       {/* Button to toggle the drawer */}
       <div onClick={toggleDrawer} className="p-2 hover:cursor-pointer">
         <RxHamburgerMenu size={30} />
@@ -74,8 +70,9 @@ const Root_Drawer = () => {
       {/* Drawer */}
       <div
         ref={drawerRef}
-        className={`bg-white text-black fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] transform transition-transform duration-300 z-50 ${isOpen ? "translate-x-0" : "translate-x-full"
+        className={`bg-white text-black fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] transform transition-transform duration-300 z-50 overflow-hidden ${isOpen ? "translate-x-0" : "translate-x-full"
           }`}
+        style={{ overflowY: "auto", overflowX: "hidden" }} // Adjust overflow as needed
       >
         {/* logo */}
         <div className="flex justify-center items-center p-2">

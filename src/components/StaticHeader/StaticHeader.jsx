@@ -1,26 +1,28 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import Root_Drawer from '../Drawer/Root_Drawer'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Root_Drawer from '../Drawer/Root_Drawer';
 
-import './staticHeader.css'
+import './staticHeader.css';
 // logo
-import logo from '../../assets/logo/Sparkle By CYC.svg'
+import logo from '../../assets/logo/Sparkle By CYC.svg';
 
 const StaticHeader = () => {
   return (
     <>
-      <header className='static-header shadow-lg'>
-        <div className='static-logo'>
-          <NavLink to={"/"}>
-            <img src={logo} alt="Sparkle logo" className='size-[80px] p-2' />
+      <header className="static-header shadow-lg">
+        {/* Logo Section */}
+        <div className="static-logo">
+          <NavLink to="/">
+            <img src={logo} alt="Sparkle logo" className="size-[80px] p-2" />
           </NavLink>
         </div>
 
-        <nav className="static-links">
+        {/* Navigation Links Section */}
+        <nav className="static-links max-lg:hidden">
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "active-link" : ""}`
+              `static-navlink-link ${isActive ? 'active-link' : ''}`
             }
           >
             About us
@@ -29,51 +31,57 @@ const StaticHeader = () => {
           <NavLink
             to="/program"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "active-link" : ""}`
+              `static-navlink-link ${isActive ? 'active-link' : ''}`
             }
           >
             Programs
           </NavLink>
+
           <NavLink
             to="/form"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "active-link" : ""}`
+              `static-navlink-link ${isActive ? 'active-link' : ''}`
             }
           >
             Admission Form
           </NavLink>
+
           <NavLink
             to="/career"
             className={({ isActive }) =>
-              `static-navlink-link ${isActive ? "active-link" : ""}`
+              `static-navlink-link ${isActive ? 'active-link' : ''}`
             }
           >
             Career
           </NavLink>
+
           <NavLink
             to="/gallery"
             className={({ isActive }) =>
-              `root-navlink-link ${isActive ? "active-link" : ""}`
+              `static-navlink-link ${isActive ? 'active-link' : ''}`
             }
           >
             Gallery
           </NavLink>
         </nav>
 
-        <div className='static-contact'>
+        {/* Contact Button Section */}
+        <div className="static-contact max-lg:hidden">
           <NavLink
             to="/contact"
-            className={"bg-[#ff0000] text-white py-[10px] px-[20px] max-lg:hidden"}
+            className="bg-[#ff0000] text-white py-[10px] px-[20px]"
           >
             Contact
           </NavLink>
         </div>
+
+        {/* Drawer for Mobile */}
         <div className="static-drawer lg:hidden">
           <Root_Drawer />
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default StaticHeader
+export default StaticHeader;

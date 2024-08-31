@@ -102,7 +102,7 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className='w-full bg-[#CCE0FF]'>
+    <div className='w-full bg-[#CCE0FF] '>
       {/* Static header */}
       <StaticHeader />
 
