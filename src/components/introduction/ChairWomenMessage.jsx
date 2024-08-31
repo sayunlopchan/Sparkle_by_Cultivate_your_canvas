@@ -20,7 +20,7 @@ import AnimatedComponent2 from '../Animation/AnimatedComponent2'
 
 const ChairWomenMessage = () => {
   return (
-    <div className='p-10 bg-cover bg-center' style={{ backgroundImage: `url(${texture})` }}>
+    <div className='p-10 bg-cover bg-center overflow-x-hidden' style={{ backgroundImage: `url(${texture})` }}>
       <div className='w-full grid grid-cols-1 lg:grid-cols-12 spaace-y-5 max-lg:justify-items-center gap-5'>
         {/* message */}
         <div className='lg:col-span-7 max-lg:order-2 space-y-5 relative'>

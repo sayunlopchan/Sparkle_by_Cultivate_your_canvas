@@ -1,6 +1,6 @@
 /* Grid-Gallery_1 */
 .grid-gallary-1-container {
-  @apply grid grid-cols-1 lg:grid-cols-12 h-full p-10 gap-10;
+  @apply grid grid-cols-1 lg:grid-cols-12 h-full p-10 gap-10 overflow-x-hidden;
 }
 
 .grid-gallery-1-container-box {
