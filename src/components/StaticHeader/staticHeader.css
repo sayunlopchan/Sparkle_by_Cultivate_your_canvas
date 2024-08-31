@@ -3,20 +3,24 @@
   transition: 0.2s;
   display: flex;
   height: 80px;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
   color: black;
+  overflow-x: hidden;
 }
 .slider-header {
   font-size: 20px;
   transition: 0.2s;
   display: flex;
   height: 80px;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
   color: white;
+  overflow-x: hidden;
 }
 
 .static-links {

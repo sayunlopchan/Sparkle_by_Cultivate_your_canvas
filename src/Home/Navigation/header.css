@@ -7,13 +7,14 @@
   transition: 0.2s;
   display: flex;
   height: 80px;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   color: rgb(65, 62, 62);
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   padding: 0px 40px;
+  overflow-x: hidden;
 }
 
 .root-navlink-link {
