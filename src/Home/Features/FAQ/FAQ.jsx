@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import littleGirl from '../../../assets/texture/useableImages/little-girl-thinking-studio-shot.png';
 
+import { FaChevronDown } from "react-icons/fa";
+
 const FAQ = () => {
   const Faqdata = [
     {
@@ -50,23 +52,27 @@ const FAQ = () => {
       {Faqdata.map((item, idx) => (
         <div
           key={idx}
-          className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-all duration-500  ${openFAQIndex === idx ? "bg-orange-500 text-white" : "text-black"
+          className={`py-5 px-4 border border-gray-400 rounded-lg w-[80vw] cursor-pointer transition-all duration-500  ${openFAQIndex === idx ? "bg-orange-500" : "text-black"
             }`}
           onClick={() => handleFAQ(idx)}
         >
+          <div className=" flex justify-between items-center">
+            <h1
+              className={`font-semibold transition-all duration-500 py-1 ${openFAQIndex === idx ? ' text-white' : ''}`}
+            >
+              {item.Question}
+            </h1>
+            <span className={`transition-all duration-500 ${openFAQIndex === idx ? '-rotate-180 text-white' : ''}`}>
+              <FaChevronDown />
+            </span>
 
-          <h1
-            className={`font-semibold`}
-          >
-            {item.Question}
-          </h1>
-
+          </div>
 
           <div
-            className={`transition-all duration-500 overflow-hidden mt-[4px] border-t-4 border-dashed ${openFAQIndex === idx ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            className={`transition-all duration-500 overflow-hidden  border-t-2  ${openFAQIndex === idx ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}
           >
-            <p className={`mt-2 pt-4 text-white`}>
+            <p className={` pt-4 text-white  transition-all duration-500 overflow-hidden `}>
               {item.answer}
             </p>
           </div>

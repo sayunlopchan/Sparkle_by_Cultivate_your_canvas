@@ -28,11 +28,11 @@ const BackToTopBtn = () => {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-8 right-5">
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="p-2 bg-orange-500 text-white rounded-full shadow-lg  focus:outline-none"
+          className="p-2 bg-orange-500  text-white rounded-full shadow-2xl focus:outline-none animate-bounce"
         >
           <TbArrowBigUpLines size={30} />
         </button>

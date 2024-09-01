@@ -2,26 +2,16 @@ import React, { useState } from 'react'
 
 // img
 import group from '../../assets/image/useables/group.webp'
-
-
-
-// social icons
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { NavLink } from 'react-router-dom';
-
+// team Data
 import teamData from '../../assets/data/teamData';
+
+
 import StaticHeader from '../../components/StaticHeader/StaticHeader';
 import Useable from '../../components/Useable/Useable';
 
 const About = () => {
 
-  const [openId, setOpenId] = useState(null);
-  const handleOpen = (id) => {
-    setOpenId(openId === id ? null : id);
-  };
+
 
 
   return (
@@ -94,35 +84,25 @@ const About = () => {
           {/* Team Section */}
           <div className='flex flex-wrap gap-5 justify-center items-center'>
             {teamData.map(member => (
-              <div key={member.id} className='w-[180px] md:w-[200px] h-[195px] md:h-[240px] rounded-lg overflow-hidden shadow-lg relative'>
-                <img src={member.image} alt={`Team member ${member.id}`} className='h-full w-full' />
-                <div
-                  onClick={() => handleOpen(member.id)}
-                  className='absolute top-[5px] right-[5px] z-10 cursor-pointer text-red-500 hover:text-black hover:scale-150 transition duration-200 text-[30px]'>
-                  +
+              <div key={member.id} className='w-[180px] md:w-[200px] h-[195px] md:h-[240px] rounded-lg overflow-hidden shadow-lg relative group'>
+
+                <div className='absolute h-full w-full bg-gradient-to-t from-black  opacity-0 group-hover:opacity-100 to-transparent transition-all duration-500'></div>
+
+                <img src={member.image} alt={`Team member ${member.id}`} className='h-full w-full object-cover object-center' />
+
+                {/* Hover Information */}
+                <div className='text-white p-2 group-hover:cursor-pointer'>
+
+                  <p className='absolute bottom-[10px] opacity-0 group-hover:opacity-100 group-hover:bottom-[55px] text-sm transition-all duration-300 group-hover:delay-100'>{member.fullName}</p>
+
+                  <p className='absolute bottom-[-5px] opacity-0 group-hover:opacity-100 group-hover:bottom-[35px] text-sm transition-all group-hover:delay-200 duration-300'>{member.position}</p>
+
+                  <a
+                    href={member.link}
+                    className='absolute bottom-[-10px] opacity-0 group-hover:opacity-100 text-sm hover:underline group-hover:bottom-[15px] transition-all group-hover:delay-300 underline-offset-2 duration-300'>{member.number}</a>
                 </div>
-                {openId === member.id && (
-                  <div className='absolute top-10 right-0 z-10 transition-transform translate-y-3 duration-150'>
-                    <div className='flex flex-col gap-[5px] md:gap-3 px-1'>
-                      <NavLink to={member.linkedin}>
-                        <FaLinkedin className='size-[20px] md:size-[30px] text-blue-500' />
-                      </NavLink>
-
-                      <NavLink to={member.facebook}>
-                        <FaFacebook className='size-[20px] md:size-[30px] text-blue-700' />
-                      </NavLink>
-
-                      <NavLink to={member.instagram}>
-                        <FaInstagram className='size-[20px] md:size-[30px] text-purple-500' />
-                      </NavLink>
-
-                      <NavLink to={member.whatsapp}>
-                        <FaWhatsapp className='size-[20px] md:size-[30px] text-green-500' />
-                      </NavLink>
-                    </div>
-                  </div>
-                )}
               </div>
+
             ))}
           </div>
         </div>
@@ -146,7 +126,7 @@ const About = () => {
             <h1 className='text-lg lg:text-4xl font-semibold'>Learning for All, <br />Everywhere</h1>
             <div>
               <p className='text-sm text-gray-700'>
-                Our mission is to revolutionize early childhood education in Nepal by offering high-quality, hands-on learning experiences tailored to the unique needs and interests of young learners. Through our training and workshops, we aim to enhance cognitive development, foster problem-solving skills, and inspire a lifelong passion for discovery.
+                Our mission is to revolutionize early childhood education in Nepal by offering high-quality, hands-on learning experiences tailored to the unique needs and interests of young learners. Through our training and workshops, we aim to enhance cognitive development, foster problem-solving skills, and inspire a lifelong passion for discovery.
 
               </p>
             </div>

@@ -6,7 +6,7 @@ import SliderHeader from "../../../components/StaticHeader/SliderHeader";
 import img1 from "../../../assets/image/program/art/art.webp";
 import img2 from "../../../assets/image/program/dance/dance1.webp";
 import img3 from "../../../assets/image/program/yoga/yoga.webp";
-import img4 from "../../../assets/image/program/yoga/yoga16.webp";
+import img4 from "../../../assets/image/program/art/kid14.webp";
 
 // Slider data
 const SliderData = [

@@ -1,7 +1,7 @@
 /* loading skeleton */
 
 .loading-container {
-  @apply w-full h-screen space-y-5 py-5 bg-gray-400;
+  @apply w-full h-screen space-y-5 py-5 bg-gray-400 overflow-hidden;
 }
 
 .loading-box-1 {

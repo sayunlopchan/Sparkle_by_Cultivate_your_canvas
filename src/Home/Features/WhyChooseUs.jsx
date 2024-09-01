@@ -1,16 +1,11 @@
 import React from "react";
 
-
+// card img
 import ExperiencedInstructors from "../../assets/texture/useableImages/ExperiencedInstructors.webp";
-
 import HolisticDevelopment from "../../assets/texture/useableImages/HolisticDevelopment.webp";
-
 import SafeSecureEnvironment from "../../assets/texture/useableImages/Safe & Secure Environment.webp";
-
 import ParentInvolvement from "../../assets/texture/useableImages/parental-involvement.jpg";
-
 import FlexiblePrograms from "../../assets/texture/useableImages/Flexible Programs.jpg";
-
 import CreativeLearning from "../../assets/texture/useableImages/nursery_teacher_3.webp";
 
 

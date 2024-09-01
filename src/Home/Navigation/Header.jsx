@@ -11,7 +11,7 @@ import './header.css';
 const links = [
   { path: "/about", label: "About us" },
   { path: "/program", label: "Programs" },
-  { path: "/form", label: "Admission Form" },
+  { path: "/admissionform", label: "Admission Form" },
   { path: "/career", label: "Career" },
   { path: "/gallery", label: "Gallery" },
 ];

@@ -18,7 +18,7 @@ import AnimatedComponent2 from "../../../components/Animation/AnimatedComponent2
 
 const ChairWomenMessage = () => {
   return (
-    <div className="py-10 overflow-x-hidden">
+    <div className="pt-20 pb-10 overflow-x-hidden">
       <div
         className="p-10 bg-cover bg-center "
         style={{ backgroundImage: `url(${texture})` }}

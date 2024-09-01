@@ -58,7 +58,7 @@ const GridGallery_1 = () => {
   ]
 
   return (
-    <div className="grid-gallary-1-container ">
+    <div className="grid-gallary-1-container">
       {/* img */}
       <div className="grid-gallery-1-container-box relative">
         <AnimatedComponent>

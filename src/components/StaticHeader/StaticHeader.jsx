@@ -38,7 +38,7 @@ const StaticHeader = () => {
           </NavLink>
 
           <NavLink
-            to="/form"
+            to="/admissionform"
             className={({ isActive }) =>
               `static-navlink-link ${isActive ? 'active-link' : ''}`
             }

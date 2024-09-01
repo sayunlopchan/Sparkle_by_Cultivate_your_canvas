@@ -20,7 +20,7 @@ import FAQ from '../Home/Features/FAQ/FAQ'
 const Homepage = () => {
 
   return (
-    <div className='space-y-20 lg:space-y-28'>
+    <div className='space-y-10'>
       <Slider />
       <GridGallery_1 />
       <Introduction />

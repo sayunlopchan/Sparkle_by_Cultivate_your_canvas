@@ -37,7 +37,7 @@ const SliderHeader = () => {
           </NavLink>
 
           <NavLink
-            to="/form"
+            to="/admissionform"
             className={({ isActive }) =>
               `static-navlink-link ${isActive ? 'bg-[#ffa500]' : ''}`
             }
