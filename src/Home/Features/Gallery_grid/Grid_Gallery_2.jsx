@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import './gallery.css';
 
-import img1 from '../../assets/image/program/art/art.webp';
-import img2 from '../../assets/image/program/dance/dance.webp';
-import img3 from '../../assets/image/program/dance/dance2.webp'
-import img4 from '../../assets/image/program/dance/dance3.webp'
-import img5 from '../../assets/image/program/dance/dance4.webp'
+import img1 from '../../../assets/image/program/art/art.webp';
+import img2 from '../../../assets/image/program/dance/dance.webp';
+import img3 from '../../../assets/image/program/dance/dance2.webp'
+import img4 from '../../../assets/image/program/dance/dance3.webp'
+import img5 from '../../../assets/image/program/dance/dance4.webp'
 
 // texture images
-import taxture from '../../assets/texture/bg-texture/bg-trangle-pattern-texture.webp'
+import taxture from '../../../assets/texture/bg-texture/bg-trangle-pattern-texture.webp'
 
 
 

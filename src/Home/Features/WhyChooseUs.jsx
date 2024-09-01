@@ -1,21 +1,21 @@
 import React from "react";
 
 
-import ExperiencedInstructors from "../assets/texture/useableImages/ExperiencedInstructors.webp";
+import ExperiencedInstructors from "../../assets/texture/useableImages/ExperiencedInstructors.webp";
 
-import HolisticDevelopment from "../assets/texture/useableImages/HolisticDevelopment.webp";
+import HolisticDevelopment from "../../assets/texture/useableImages/HolisticDevelopment.webp";
 
-import SafeSecureEnvironment from "../assets/texture/useableImages/Safe & Secure Environment.webp";
+import SafeSecureEnvironment from "../../assets/texture/useableImages/Safe & Secure Environment.webp";
 
-import ParentInvolvement from "../assets/texture/useableImages/parental-involvement.jpg";
+import ParentInvolvement from "../../assets/texture/useableImages/parental-involvement.jpg";
 
-import FlexiblePrograms from "../assets/texture/useableImages/Flexible Programs.jpg";
+import FlexiblePrograms from "../../assets/texture/useableImages/Flexible Programs.jpg";
 
-import CreativeLearning from "../assets/texture/useableImages/nursery_teacher_3.webp";
+import CreativeLearning from "../../assets/texture/useableImages/nursery_teacher_3.webp";
 
 
 
-import AnimatedComponent2 from "./Animation/AnimatedComponent2";
+import AnimatedComponent2 from "../../components/Animation/AnimatedComponent2";
 
 
 const WhyChooseUs = () => {

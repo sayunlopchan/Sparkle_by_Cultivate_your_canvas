@@ -1,20 +1,20 @@
 import React from "react";
 // images
-import ChairWomenPicture1 from "../../assets/image/people/chairWomen/chairwomen.webp";
-import Picture1 from "../../assets/image/program/art/art.webp";
-import ChairWomenPicture2 from "../../assets/image/people/chairWomen/chairwomen1.webp";
+import ChairWomenPicture1 from "../../../assets/image/people/chairWomen/chairwomen.webp";
+import Picture1 from "../../../assets/image/program/art/art.webp";
+import ChairWomenPicture2 from "../../../assets/image/people/chairWomen/chairwomen1.webp";
 
 // bg taxture
-import texture from "../../assets/texture/bg-texture/white_linen_texture.webp";
+import texture from "../../../assets/texture/bg-texture/white_linen_texture.webp";
 
 // icon image
-import pin from "../../assets/image/vector/red-drawing-pin.webp";
-import plane from "../../assets/image/vector/paper-airplane-with-dot.webp";
-import book from "../../assets/image/vector/books.webp";
+import pin from "../../../assets/image/vector/red-drawing-pin.webp";
+import plane from "../../../assets/image/vector/paper-airplane-with-dot.webp";
+import book from "../../../assets/image/vector/books.webp";
 
 // animation
-import AnimatedComponent from "../Animation/AnimatedComponent";
-import AnimatedComponent2 from "../Animation/AnimatedComponent2";
+import AnimatedComponent from "../../../components/Animation/AnimatedComponent";
+import AnimatedComponent2 from "../../../components/Animation/AnimatedComponent2";
 
 const ChairWomenMessage = () => {
   return (

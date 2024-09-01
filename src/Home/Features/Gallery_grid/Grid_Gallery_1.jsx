@@ -1,29 +1,29 @@
 import React from "react";
 
 // imgs
-import img1 from "../../assets/image/people/chairWomen/chairwomen.webp";
-import img2 from "../../assets/image/program/yoga/yoga.webp";
-import img3 from "../../assets/image/useables/grpbannerhold.webp";
-import img4 from "../../assets/image/program/art/art.webp";
+import img1 from "../../../assets/image/people/chairWomen/chairwomen.webp";
+import img2 from "../../../assets/image/program/yoga/yoga.webp";
+import img3 from "../../../assets/image/useables/grpbannerhold.webp";
+import img4 from "../../../assets/image/program/art/art.webp";
 
 // texture images
-import taxture from "../../assets/texture/bg-texture/white_linen_texture.webp";
-import butterfly from "../../assets/image/vector/rainbow-butterfly.webp";
+import taxture from "../../../assets/texture/bg-texture/white_linen_texture.webp";
+import butterfly from "../../../assets/image/vector/rainbow-butterfly.webp";
 
 
 // splash images
-import splashRed from "../../assets/texture/splash/modern-red-watercolor.png";
-import splashGreen from "../../assets/texture/splash/elegant-green-watercolor.png";
-import splashYelow from "../../assets/texture/splash/modern-yellow-orange-watercolor.png";
-import splashOrange from "../../assets/texture/splash/abstract-orange-watercolor.png";
-import splashPink from "../../assets/texture/splash/abstract-pink-watercolor.png";
+import splashRed from "../../../assets/texture/splash/modern-red-watercolor.png";
+import splashGreen from "../../../assets/texture/splash/elegant-green-watercolor.png";
+import splashYelow from "../../../assets/texture/splash/modern-yellow-orange-watercolor.png";
+import splashOrange from "../../../assets/texture/splash/abstract-orange-watercolor.png";
+import splashPink from "../../../assets/texture/splash/abstract-pink-watercolor.png";
 
 // styles css
 import "./gallery.css";
 
 // animation
-import AnimatedComponent from "../Animation/AnimatedComponent";
-import AnimatedComponent2 from "../Animation/AnimatedComponent2";
+import AnimatedComponent from "../../../components/Animation/AnimatedComponent";
+import AnimatedComponent2 from "../../../components/Animation/AnimatedComponent2";
 
 // animation
 

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./slider.css";
-import SliderHeader from "../StaticHeader/SliderHeader";
+import SliderHeader from "../../../components/StaticHeader/SliderHeader";
 
 // images
-import img1 from "../../assets/image/program/art/art.webp";
-import img2 from "../../assets/image/program/dance/dance1.webp";
-import img3 from "../../assets/image/program/yoga/yoga.webp";
-import img4 from "../../assets/image/program/yoga/yoga16.webp";
+import img1 from "../../../assets/image/program/art/art.webp";
+import img2 from "../../../assets/image/program/dance/dance1.webp";
+import img3 from "../../../assets/image/program/yoga/yoga.webp";
+import img4 from "../../../assets/image/program/yoga/yoga16.webp";
 
 // Slider data
 const SliderData = [

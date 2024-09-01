@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import littleGirl from '../../assets/texture/useableImages/little-girl-thinking-studio-shot.png';
+import littleGirl from '../../../assets/texture/useableImages/little-girl-thinking-studio-shot.png';
 
 const FAQ = () => {
   const Faqdata = [
