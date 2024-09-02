@@ -69,7 +69,7 @@
 
 /* Swiper Content (Text) */
 .swiper-content {
-  @apply absolute max-sm:top-[30%] sm:top-[25%] md:top-[30%] left-5 md:left-10 w-[70%] lg:w-[60%] text-white z-10;
+  @apply absolute max-sm:top-[30%] sm:top-[25%] md:top-[30%] left-5 md:left-10 w-[80%] lg:w-[60%] text-white z-10;
 }
 
 /* Content Styling */
