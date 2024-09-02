@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 // styles
 import './footer.css'
@@ -30,6 +30,8 @@ const Footer = () => {
 
 
 
+  const [isDisabled, setIsDisabled] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       email: ''
@@ -37,9 +39,17 @@ const Footer = () => {
     validationSchema: Yup.object({
       email: Yup.string().email('Invalid email address').required('email is required')
     }),
-    onSubmit: (values) => {
-      // alert(JSON.stringify(values, null, 2));
-      toast.success('Thank you for subscribing')
+    onSubmit: (values, { resetForm }) => {
+      setIsDisabled(true); // Disable the button after submitting
+      toast.success('Thank you for subscribing');
+
+      // Reset the input field after submitting
+      resetForm();
+
+      // Re-enable the button after 6 seconds
+      setTimeout(() => {
+        setIsDisabled(false);
+      }, 6000);
     },
   });
 
@@ -139,7 +149,9 @@ const Footer = () => {
                   {...formik.getFieldProps('email')}
                 />
                 <div className="btn-container">
-                  <button type="submit" >subscribe</button>
+                  <button type="submit" disabled={isDisabled}>
+                    {isDisabled ? 'Subscribe' : 'Subscribe'}
+                  </button>
                 </div>
                 {formik.touched.email && formik.errors.email ? (
                   <div className="text-white">{formik.errors.email}</div>
