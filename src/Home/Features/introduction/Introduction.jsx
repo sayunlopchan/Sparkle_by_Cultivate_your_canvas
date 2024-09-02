@@ -11,7 +11,7 @@ const Introduction = () => {
       <div className=' w-full relative'>
 
         {/* headinng */}
-        <h1 className=' text-[30px] lg:text-[50px] font-bold '>Introduction</h1>
+        <h2 className=' text-[30px] lg:text-[50px] font-bold '>Introduction</h2>
       </div>
       {/* text */}
       <div className='space-y-5'>

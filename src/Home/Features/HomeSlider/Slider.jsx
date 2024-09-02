@@ -104,10 +104,10 @@ const Slider = () => {
         <div className="bg-black opacity-35 h-[100vh] w-full"></div>
         {/* texts */}
         <div className={`swiper-content ${animationClass}`}>
-          <h1 className={`content-h1 ${SliderData[currentIndex].color}`}>
+          <h2 className={`content-h2 ${SliderData[currentIndex].color}`}>
             {SliderData[currentIndex].title}
-          </h1>
-          <h2 className="content-h2">-{SliderData[currentIndex].author}</h2>
+          </h2>
+          <h3 className="content-h3">-{SliderData[currentIndex].author}</h3>
           <p className="content-p">{SliderData[currentIndex].description}</p>
         </div>
       </div>

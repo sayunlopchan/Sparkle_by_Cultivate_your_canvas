@@ -61,6 +61,7 @@ const Contact = () => {
 
       {/* heading */}
       <div className="text-center space-y-5 p-10 bg-gray-300">
+
         <div className="relative h-[200px]">
           <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-green-500 via-blue-500 to-red-500 opacity-50 blur-2xl"></div>
           <div className="absolute z-20 mt-10 w-full space-y-5">

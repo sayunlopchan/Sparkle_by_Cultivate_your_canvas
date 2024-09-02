@@ -82,16 +82,13 @@ const GridGallery_1 = () => {
       {/* text */}
       <div className="grid-gallery-1-container-box ">
         <div className="w-full space-y-5">
-          {textData.map((item, index) => (
-            <AnimatedComponent2 key={index}>
-              {item.heading && (
-                <h1 className="text-red-500 font-[500] text-4xl ">
-                  {item.heading}
-                </h1>
-              )}
-              <p className="p-text italic ">{item.description}</p>
-            </AnimatedComponent2>
-          ))}
+          <AnimatedComponent2>
+            <h1 className="text-red-500 font-[500] text-4xl ">Empowering Young Minds, Shaping Nepal's Future Leaders Through Creativity and Confidence.</h1>
+          </AnimatedComponent2>
+          <AnimatedComponent2>
+            <p className="p-text italic ">At Sparkle Kids Academy, we nurture young minds by fostering creativity and confidence, equipping Nepal's future leaders with essential life skills for success in an ever-changing world. Our programs are designed to inspire and empower children to reach their full potential.</p>
+          </AnimatedComponent2>
+
 
           <ul className="card-ul">
             {offerings.map((offer, idx) => (

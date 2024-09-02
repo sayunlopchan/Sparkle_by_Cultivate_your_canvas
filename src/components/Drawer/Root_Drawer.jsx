@@ -64,7 +64,7 @@ const Root_Drawer = () => {
 
       {/* Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md z-40 h-[100vh] overflow-x-hidden"></div>
+        <div className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-md filter blur-md z-40 h-[100vh] overflow-x-hidden"></div>
       )}
 
       {/* Drawer */}
@@ -72,7 +72,7 @@ const Root_Drawer = () => {
         ref={drawerRef}
         className={`bg-white text-black fixed top-0 right-0 h-[100vh] w-[70vw] sm:w-[300px] transform transition-transform duration-300 z-50  ${isOpen ? "translate-x-0" : "translate-x-full"
           }`}
-        style={{ overflowY: "auto", overflowX: "hidden" }} // Adjust overflow as needed
+        style={{ overflowX: "hidden" }} // Adjust overflow as needed
       >
         {/* logo */}
         <div className="flex justify-center items-center p-2">

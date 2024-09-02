@@ -53,11 +53,11 @@ const WhyChooseUs = () => {
       {/* heading */}
       <div className="text-center space-y-5 px-10">
 
-        <h1 className="text-sm lg:text-lg font-semibold p-2 mx-auto bg-orange-300 rounded-3xl w-fit">Escape the traditional teaching</h1>
+        <h2 className="text-sm lg:text-lg font-semibold p-2 mx-auto bg-orange-300 rounded-3xl w-fit">Escape the traditional teaching</h2>
 
         <div className="text-lg lg:text-4xl font-semibold text-orange-400">
-          <h2>Benefits of The Sparkle Kids Academy</h2>
-          <h3>Progressive Education Program</h3>
+          <h2 className="text-xl md:text-4xl">Benefits of The Sparkle Kids Academy</h2>
+          <h3 className="text-xl md:text-4xl">Progressive Education Program</h3>
         </div>
 
         <div className=" text-sm md:text-lg lg:w-[35vw] mx-auto">
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
                   alt="img"
                   className="size-[130px] rounded-full bg-red-500"
                 />
-                <h1 className="font-semibold text-2xl">{item.title}</h1>
+                <h2 className="font-semibold text-2xl">{item.title}</h2>
                 <p>{item.p}</p>
               </div>
             </AnimatedComponent2>

@@ -98,7 +98,7 @@ const Program = () => {
                   <img
                     src={program.image}
                     alt={program.title}
-                    className={`animate-animate shadow-xl max-lg:h-[300px] max-sm:h-full max-md:hidden`}
+                    className={`animate-animate shadow-xl object-cover max-sm:h-full max-md:hidden size-[500px]`}
                   />
                 </AnimatedComponent>
               </div>

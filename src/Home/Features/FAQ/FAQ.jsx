@@ -40,7 +40,7 @@ const FAQ = () => {
 
   return (
     <div className="p-10 space-y-5 bg-cover bg-center relative overflow-hidden">
-      <h1 className="font-bold text-2xl py-5">FAQs for Parents</h1>
+      <h2 className="font-bold text-2xl py-5">FAQs for Parents</h2>
 
       <img
         src={littleGirl}
@@ -57,11 +57,11 @@ const FAQ = () => {
           onClick={() => handleFAQ(idx)}
         >
           <div className=" flex justify-between items-center">
-            <h1
+            <h2
               className={`font-semibold transition-all duration-500 py-1 ${openFAQIndex === idx ? ' text-white' : ''}`}
             >
               {item.Question}
-            </h1>
+            </h2>
             <span className={`transition-all duration-500 ${openFAQIndex === idx ? '-rotate-180 text-white' : ''}`}>
               <FaChevronDown />
             </span>
