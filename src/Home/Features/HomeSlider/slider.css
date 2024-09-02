@@ -84,7 +84,7 @@
 }
 
 .content-p {
-  @apply text-[16px] w-[60%] lg:w-[70%] mt-1;
+  @apply text-[16px] w-[90%] lg:w-[70%] mt-1;
 }
 
 /* Thumbnail Container */
