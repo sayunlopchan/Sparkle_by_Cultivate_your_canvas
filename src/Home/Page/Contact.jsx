@@ -6,6 +6,7 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import emailjs from 'emailjs-com';
+import { toast } from "react-toastify";
 
 const Contact = () => {
 
@@ -42,12 +43,14 @@ const Contact = () => {
       )
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
-          alert('Message sent successfully!');
+          // alert('Message sent successfully!');
+          toast.success('Message sent successfully')
           resetForm(); // Reset the form after successful submission
         })
         .catch((error) => {
           console.error('Failed to send message:', error);
-          alert('Failed to send message. Please try again.');
+          // alert('Failed to send message. Please try again.');
+          toast.error('Failed to send message. Please try again')
         });
     },
   });

@@ -5,13 +5,12 @@ import { IoPhonePortrait } from 'react-icons/io5';
 import AnimatedComponent from '../../components/Animation/AnimatedComponent';
 import AnimatedComponent2 from '../../components/Animation/AnimatedComponent2';
 import Useable from '../../components/Useable/Useable';
-
-
-
+import emailjs from 'emailjs-com';
 
 // form
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { toast } from 'react-toastify';
 
 const admissionProcessData = [
   {
@@ -65,8 +64,6 @@ const processes = [
 
 const Form = () => {
 
-
-
   const formik = useFormik({
     initialValues: {
       fullName: '',
@@ -74,7 +71,6 @@ const Form = () => {
       email: '',
       number: '',
       dob: '',
-      programSelected: '',
       gender: '',
       address: '',
     },
@@ -85,23 +81,43 @@ const Form = () => {
       parentName: Yup.string()
         .max(20, 'Must be 20 characters or less')
         .required('*Required*'),
-      email: Yup.string().email('Invalid email address').notRequired(),
+      email: Yup.string().email('Invalid email address').required('Email is required'),
       number: Yup.string()
         .matches(/^[0-9]+$/, 'Must be only digits')
         .min(10, 'Must be exactly 10 digits')
         .max(10, 'Must be exactly 10 digits')
         .required('Phone number is required'),
       dob: Yup.date().required('Date of birth is required'),
-      programSelected: Yup.string().required('Please select a program'),
       gender: Yup.string().required('Gender is required'),
       address: Yup.string().required('Address is required'),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-      // Redirect to Google Form after submission
-      window.location.href = 'https://forms.gle/your-google-form-url';
+    onSubmit: (values, { resetForm }) => {
+      emailjs.send(
+        'SparklebyCYC',         // Replace with your EmailJS Service ID
+        'template_admissionForm',        // Replace with your EmailJS Template ID
+        {
+          fullName: values.fullName,
+          parentName: values.parentName,
+          email: values.email,
+          number: values.number,
+          dob: values.dob,
+          gender: values.gender,
+          address: values.address,
+        },
+        'wOoJP1gd0_16es-iH'             // Replace with your EmailJS User ID
+      )
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          toast.success('Thank you for submitting! , Please visit our office with photo')
+          resetForm(); // Reset the form after successful submission
+        })
+        .catch((error) => {
+          console.error('Failed to send message:', error);
+          toast.error('Failed to send message. Please try again.')
+        });
     },
   });
+
 
   return (
     <div className="bg-[#CCE0FF] min-h-screen overflow-hidden">
@@ -121,7 +137,7 @@ const Form = () => {
         {/* heading */}
         <h2 className="text-2xl font-bold mb-6 text-center">Admission Form</h2>
 
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} method='POST'>
           {/* Full Name */}
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="fullName">
@@ -165,7 +181,6 @@ const Form = () => {
               type="email"
               id="email"
               name="email"
-              placeholder="Optional"
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none"
               {...formik.getFieldProps('email')}
             />
@@ -208,30 +223,6 @@ const Form = () => {
             ) : null}
           </div>
 
-          {/* Program Selection */}
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="programSelected">
-              Program <span className='text-red-500'>*</span>
-            </label>
-            <select
-              id="programSelected"
-              name="programSelected"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none"
-              {...formik.getFieldProps('programSelected')}
-            >
-              <option value="" disabled>
-                Select your program <span className='text-red-500'>*</span>
-              </option>
-              <option value="arts">Arts</option>
-              <option value="yoga">Yoga</option>
-              <option value="publicSpeaking">Public Speaking</option>
-              <option value="dance">Dance</option>
-              <option value="personalDevelopment">Personal Development</option>
-            </select>
-            {formik.touched.programSelected && formik.errors.programSelected ? (
-              <div className="text-red-500">{formik.errors.programSelected}</div>
-            ) : null}
-          </div>
 
           {/* Gender */}
           <div className="mb-4">
@@ -264,7 +255,6 @@ const Form = () => {
               <div className="text-red-500">{formik.errors.gender}</div>
             ) : null}
           </div>
-
 
           {/* Address */}
           <div className="mb-4">

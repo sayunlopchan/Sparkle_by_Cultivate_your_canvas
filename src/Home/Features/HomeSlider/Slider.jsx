@@ -16,6 +16,7 @@ const SliderData = [
     author: "Lujala Shakya",
     description:
       "Children can explore their creativity while developing important skills. Art enhances motor abilities, problem-solving, and spatial awareness. It encourages critical thinking and self-expression, building confidence. Engaging in art also supports overall cognitive and emotional growth, making it a valuable part of education.",
+    color: 'text-red-500',
   },
   {
     img: img2,
@@ -23,13 +24,15 @@ const SliderData = [
     author: "Rosy Shrestha",
     description:
       "Children can develop coordination, balance, and flexibility while fostering creativity and self-expression through dance classes. These classes build confidence and a love for the art with structured, engaging instruction.",
+    color: 'text-blue-500'
   },
   {
     img: img3,
     title: "Yoga",
-    author: "Ira Sushmita Chamling Rai",
+    author: "Sushmita Chamling Rai",
     description:
       "Yoga program helps children improve focus, flexibility, and emotional balance through guided poses and mindfulness. It builds body awareness and coordination, fostering resilience and confidence.",
+    color: 'text-orange-500'
   },
   {
     img: img4,
@@ -37,6 +40,7 @@ const SliderData = [
     author: "Snehalata Raut Thapa",
     description:
       "Build confidence and improve communication skills.Learn to articulate thoughts clearly, organize ideas effectively, and engage with audiences, setting the stage for future leadership and enhancing their ability to express themselves persuasively.",
+    color: 'text-green-500'
   },
 ];
 
@@ -97,14 +101,17 @@ const Slider = () => {
         className={`swiper-container bg-${animationClass}`}
         style={{ backgroundImage: `url(${SliderData[currentIndex].img})` }}
       >
-        <div className="bg-black opacity-25 h-[100vh] w-full"></div>
+        <div className="bg-black opacity-35 h-[100vh] w-full"></div>
         {/* texts */}
         <div className={`swiper-content ${animationClass}`}>
-          <h1 className="content-h1"> {SliderData[currentIndex].title} </h1>
-          <h2 className="content-h2"> {SliderData[currentIndex].author} </h2>
-          <p className="content-p"> {SliderData[currentIndex].description} </p>
+          <h1 className={`content-h1 ${SliderData[currentIndex].color}`}>
+            {SliderData[currentIndex].title}
+          </h1>
+          <h2 className="content-h2">-{SliderData[currentIndex].author}</h2>
+          <p className="content-p">{SliderData[currentIndex].description}</p>
         </div>
       </div>
+
 
       {/* thumbnail */}
       <div className="thumbnail-container">

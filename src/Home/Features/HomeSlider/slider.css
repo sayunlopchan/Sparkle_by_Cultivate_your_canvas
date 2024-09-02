@@ -69,20 +69,22 @@
 
 /* Swiper Content (Text) */
 .swiper-content {
-  @apply absolute max-sm:top-[45%] sm:top-[25%] md:top-[28%] left-5 md:left-20 w-[70%] lg:w-[600px] text-white z-10;
+  @apply absolute max-sm:top-[27%] sm:top-[25%] md:top-[40%] left-5 md:left-10 w-[70%] lg:w-[60%] text-white z-10;
 }
 
 /* Content Styling */
 .content-h1 {
-  @apply text-[40px] lg:text-[55px] font-bold;
+  @apply text-[40px] lg:text-[80px] font-bold uppercase;
+  -webkit-text-stroke: 2px white;
+  line-height: 1em;
 }
 
 .content-h2 {
-  @apply text-[20px] lg:text-[45px];
+  @apply text-[20px] lg:text-[30px] uppercase;
 }
 
 .content-p {
-  @apply text-sm md:text-[18px];
+  @apply text-sm md:text-[16px] lg:w-[70%] mt-1;
 }
 
 /* Thumbnail Container */
@@ -92,7 +94,7 @@
 
 /* Slider Thumbnails */
 .slider-thumbnail img {
-  @apply size-[90px] lg:size-[140px] shadow-2xl;
+  @apply size-[90px] lg:size-[140px] shadow-2xl cursor-pointer;
   object-fit: cover;
   border: 2px solid white;
   border-radius: 12px;

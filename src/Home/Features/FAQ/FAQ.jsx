@@ -39,7 +39,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="p-10 space-y-5 bg-cover bg-center lg:h-[600px] relative overflow-hidden">
+    <div className="p-10 space-y-5 bg-cover bg-center relative overflow-hidden">
       <h1 className="font-bold text-2xl py-5">FAQs for Parents</h1>
 
       <img

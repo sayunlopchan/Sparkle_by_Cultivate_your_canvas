@@ -1,8 +1,6 @@
 import React from 'react'
 
-// sticker img
-import candle2 from '../../../assets/image/vector/burning-candle2.webp'
-import candle3 from '../../../assets/image/vector/burning-candle3.webp'
+
 
 
 const Introduction = () => {
@@ -14,16 +12,6 @@ const Introduction = () => {
 
         {/* headinng */}
         <h1 className=' text-[30px] lg:text-[50px] font-bold '>Introduction</h1>
-
-        {/* stickers */}
-        <img
-          src={candle2}
-          alt="candle"
-          className='absolute h-[80px] right-0 bottom-0 md:right-[26%]' />
-        <img
-          src={candle3}
-          alt="candle"
-          className='absolute h-[80px] left-0 -bottom-0 md:left-[26%]' />
       </div>
       {/* text */}
       <div className='space-y-5'>
