@@ -1,9 +1,14 @@
 import React from 'react';
 import StaticHeader from '../../components/StaticHeader/StaticHeader';
+import { MdLocationPin } from "react-icons/md";
 import { BsFillTelephoneForwardFill } from 'react-icons/bs';
 import { IoPhonePortrait } from 'react-icons/io5';
+
+// animation
 import AnimatedComponent from '../../components/Animation/AnimatedComponent';
 import AnimatedComponent2 from '../../components/Animation/AnimatedComponent2';
+
+// /////////
 import Useable from '../../components/Useable/Useable';
 import emailjs from 'emailjs-com';
 
@@ -12,28 +17,6 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';
 
-const admissionProcessData = [
-  {
-    type: 'heading',
-    content: 'Admission Process for Incoming Students',
-    className: 'text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl',
-  },
-  {
-    type: 'subheading',
-    content: 'If you prefer immediate answers',
-    className: 'font-semibold text-[15px] lg:text-xl',
-  },
-  {
-    type: 'icon',
-    content: '9857049590',
-    icon: <IoPhonePortrait size={25} />,
-  },
-  {
-    type: 'icon',
-    content: '01-5409722',
-    icon: <BsFillTelephoneForwardFill size={25} />,
-  },
-];
 
 const processes = [
   {
@@ -287,28 +270,28 @@ const Form = () => {
       {/* processes */}
       <div className="grid grid-cols-1 lg:grid-cols-2 p-10 space-y-10">
         <div className="space-y-5 lg:mt-10">
-          {admissionProcessData.map((item, index) => (
-            <AnimatedComponent key={index}>
-              {item.type === 'heading' && (
-                <h1 className={`${item.className} lg:w-[70%]`}>
-                  {item.content}
-                </h1>
-              )}
-              {item.type === 'subheading' && (
-                <h2 className={`${item.className}`}>
-                  {item.content}
-                </h2>
-              )}
-              {item.type === 'icon' && (
-                <a
-                  href={`tel:${item.content}`}
-                  className="flex gap-3 cursor-pointer hover:underline underline-offset-2 w-fit"
-                >
-                  {item.icon} {item.content}
-                </a>
-              )}
-            </AnimatedComponent>
-          ))}
+          <AnimatedComponent>
+            <h1 className='text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl lg:w-[70%]'>Admission Process for Incoming Students</h1>
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <h2 className='font-semibold text-[15px] lg:text-xl'>If you prefer immediate answers</h2>
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <a
+              href="https://maps.app.goo.gl/RrrUfgmmvpDQcETF9"
+              className="flex gap-3 cursor-pointer hover:underline underline-offset-2 w-fit"><IoPhonePortrait size={25} />Lalitpur-5, Manbhawan</a>
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <a
+              href="tel:9857049590"
+              className="flex gap-3 cursor-pointer hover:underline underline-offset-2 w-fit"><BsFillTelephoneForwardFill size={25} />01-5409722</a>
+          </AnimatedComponent>
+          <AnimatedComponent>
+            <a
+              href="tel:9857049590"
+              className="flex gap-3 cursor-pointer hover:underline underline-offset-2 w-fit"><IoPhonePortrait size={25} />9857049590</a>
+          </AnimatedComponent>
+
         </div>
 
         <div>
