@@ -106,9 +106,9 @@ const Program = () => {
                 <AnimatedComponent2>
                   <div className="flex justify-center items-start flex-col">
                     <img src={program.icon} alt="" className="size-[100px]" />
-                    <h1 className="font-bold text-[30px]">
+                    <h2 className="font-bold text-[30px]">
                       {program.title}
-                    </h1>
+                    </h2>
                   </div>
                   <p
                     className="p-text"

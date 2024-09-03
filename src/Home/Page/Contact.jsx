@@ -1,11 +1,18 @@
 import React from "react";
 import StaticHeader from "../../components/StaticHeader/StaticHeader";
+
+
+// react ioncs
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
+
+// emailjs api
+import emailjs from 'emailjs-com';
+
+// npms
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import emailjs from 'emailjs-com';
 import { toast } from "react-toastify";
 
 const Contact = () => {
@@ -21,35 +28,33 @@ const Contact = () => {
     validationSchema: Yup.object({
       fullName: Yup.string()
         .max(20, 'Must be 20 characters or less')
-        .required('*Required*'),
+        .required('*Full Name Required*'),
       email: Yup.string().email('Invalid email address').required('Email is required!'),
       subject: Yup.string()
         .max(50, 'Must be 50 characters or less')
-        .required('*Required*'),
+        .required('*Subject is Required*'),
       message: Yup.string()
-        .required('*Required*'),
+        .required('*Message is Required*'),
     }),
     onSubmit: (values, { resetForm }) => {
       emailjs.send(
-        'SparklebyCYC',         // Replace with your EmailJS Service ID
-        'sparkle_by_cyc_template',        // Replace with your EmailJS Template ID
+        'SparklebyCYC', // Replace with your EmailJS Service ID
+        'sparkle_by_cyc_template',  // Replace with your EmailJS Template ID
         {
           fullName: values.fullName,
           email: values.email,
           subject: values.subject,
           message: values.message
         },
-        'wOoJP1gd0_16es-iH'             // Replace with your EmailJS User ID
+        'wOoJP1gd0_16es-iH' // Replace with your EmailJS User ID
       )
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
-          // alert('Message sent successfully!');
           toast.success('Message sent successfully')
           resetForm(); // Reset the form after successful submission
         })
         .catch((error) => {
           console.error('Failed to send message:', error);
-          // alert('Failed to send message. Please try again.');
           toast.error('Failed to send message. Please try again')
         });
     },
@@ -69,8 +74,8 @@ const Contact = () => {
               Have Questions?
             </span>
             <div className="font-semibold text-[24px]">
-              <h1>Come and visit our office</h1>
-              <h2>Know us More!</h2>
+              <h2>Come and visit our office</h2>
+              <h3>Know us More!</h3>
             </div>
           </div>
         </div>
@@ -114,7 +119,7 @@ const Contact = () => {
         {/* Contact form */}
         <div className="py-10 my-10">
           <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h2>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Us</h3>
             <form onSubmit={formik.handleSubmit} method="POST" className="space-y-4">
               {/* Name Input */}
               <div>

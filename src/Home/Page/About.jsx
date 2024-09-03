@@ -31,11 +31,11 @@ const About = () => {
           <div className=' bg-white lg:col-span-5 lg:row-span-12 p-10 space-y-5 lg:space-y-10 rounded-3xl max-lg:order-2'>
             <div>
               <span className='text-red-500 text-sm font-semibold'>How it Started</span>
-              <h1
+              <h2
                 className='text-lg lg:text-4xl  font-semibold'
               >
                 Our Dream is <br /> Global Learning Transformation
-              </h1>
+              </h2>
             </div>
             <div >
               <p className='text-sm text-gray-700'>
@@ -53,20 +53,20 @@ const About = () => {
             <div className='flex flex-wrap p-5 items-center justify-center gap-5'>
 
               <div className='px-3 py-4  w-[200px] bg-gray-50 rounded-2xl'>
-                <h1 className='text-lg font-bold'>1+</h1>
+                <h2 className='text-lg font-bold'>1+</h2>
                 <p className='text-[12px] text-gray-700'>Years Experience</p>
               </div>
 
               <div className='px-3 py-4 w-[200px] bg-gray-50 rounded-2xl'>
-                <h1 className='text-lg font-bold'>20+</h1>
+                <h2 className='text-lg font-bold'>20+</h2>
                 <p className='text-[12px] text-gray-700'>Successful Events</p>
               </div>
               <div className='px-3 py-4 w-[200px] bg-gray-50 rounded-2xl'>
-                <h1 className='text-lg font-bold'>100+</h1>
+                <h2 className='text-lg font-bold'>100+</h2>
                 <p className='text-[12px] text-gray-700'>Positive Reviews</p>
               </div>
               <div className='px-3 py-4  w-[200px] bg-gray-50 rounded-2xl'>
-                <h1 className='text-lg font-bold'>500+</h1>
+                <h2 className='text-lg font-bold'>500+</h2>
                 <p className='text-[12px] text-gray-700'>Successful Stories</p>
               </div>
             </div>
@@ -78,7 +78,7 @@ const About = () => {
         <div className='p-10 space-y-5'>
           <div className='space-y-5'>
             <span className='text-red-500 text-sm font-semibold'>Meet the Team</span>
-            <h1 className='text-lg lg:text-4xl font-semibold'>Meet Our Dedicated Team of <br /> Educators and Innovators</h1>
+            <h2 className='text-lg lg:text-4xl font-semibold'>Meet Our Dedicated Team of <br /> Educators and Innovators</h2>
           </div>
 
           {/* Team Section */}
@@ -108,7 +108,7 @@ const About = () => {
           {/* our Vision */}
           <div className='bg-gray-50 w-full rounded-3xl p-5 space-y-5'>
             <span className='text-red-500 text-sm font-semibold'>Our Vision</span>
-            <h1 className='text-lg lg:text-4xl font-semibold'>Empowering Lives <br />Through Education</h1>
+            <h2 className='text-lg lg:text-4xl font-semibold'>Empowering Lives <br />Through Education</h2>
             <div>
               <p className='text-sm text-gray-700'>
                 Our vision is to become a leading educational and training academy for children, redefining childhood education through creativity and innovation.
@@ -119,7 +119,7 @@ const About = () => {
           {/* our Mision */}
           <div className='bg-gray-50 w-full rounded-3xl p-5 space-y-5'>
             <span className='text-red-500 text-sm font-semibold'>Our Mission</span>
-            <h1 className='text-lg lg:text-4xl font-semibold'>Learning for All, <br />Everywhere</h1>
+            <h2 className='text-lg lg:text-4xl font-semibold'>Learning for All, <br />Everywhere</h2>
             <div>
               <p className='text-sm text-gray-700'>
                 Our mission is to revolutionize early childhood education in Nepal by offering high-quality, hands-on learning experiences tailored to the unique needs and interests of young learners. Through our training and workshops, we aim to enhance cognitive development, foster problem-solving skills, and inspire a lifelong passion for discovery.

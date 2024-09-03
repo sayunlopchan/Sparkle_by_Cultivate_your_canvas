@@ -63,17 +63,17 @@ const Form = () => {
     validationSchema: Yup.object({
       fullName: Yup.string()
         .max(20, "Must be 20 characters or less")
-        .required("*Required*"),
+        .required("*Full Name Required*"),
       parentName: Yup.string()
         .max(20, "Must be 20 characters or less")
-        .required("*Required*"),
+        .required("*Parent Name Required*"),
       email: Yup.string()
         .email("Invalid email address")
         .required("Email is required"),
       number: Yup.string()
         .matches(/^[0-9]+$/, "Must be only digits")
-        .min(10, "Must be exactly 10 digits")
-        .max(10, "Must be exactly 10 digits")
+        .min(10, "Must be minimum 10 digits")
+        .max(10, "Must be maximum 10 digits")
         .required("Phone number is required"),
       dob: Yup.date().required("Date of birth is required"),
       gender: Yup.string().required("Gender is required"),
@@ -129,7 +129,7 @@ const Form = () => {
       {/* admission form */}
       <div className="max-w-2xl mx-auto bg-white p-8 mt-10 mb-20 shadow-lg rounded-lg">
         {/* heading */}
-        <h2 className="text-2xl font-bold mb-6 text-center">Admission Form</h2>
+        <h3 className="text-2xl font-bold mb-6 text-center">Admission Form</h3>
 
         <form onSubmit={formik.handleSubmit} method="POST">
           {/* Full Name */}
@@ -302,14 +302,14 @@ const Form = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 p-10 space-y-10">
         <div className="space-y-5 lg:mt-10">
           <AnimatedComponent>
-            <h1 className="text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl lg:w-[70%]">
+            <h2 className="text-orange-500 font-bold text-xl md:text-2xl lg:text-4xl lg:w-[70%]">
               Admission Process for Incoming Students
-            </h1>
+            </h2>
           </AnimatedComponent>
           <AnimatedComponent>
-            <h2 className="font-semibold text-[15px] lg:text-xl">
+            <h3 className="font-semibold text-[15px] lg:text-xl">
               If you prefer immediate answers
-            </h2>
+            </h3>
           </AnimatedComponent>
           <AnimatedComponent>
             <a
@@ -349,9 +349,9 @@ const Form = () => {
                     <div className="size-[50px] rounded-full bg-orange-500 text-center pt-3 text-2xl font-bold text-white">
                       {process.step}
                     </div>
-                    <h1 className="text-2xl font-bold text-orange-400">
+                    <h2 className="text-2xl font-bold text-orange-400">
                       {process.title}
-                    </h1>
+                    </h2>
                   </div>
                   <div className="ml-[65px] mt-5 text-lg">
                     <p>{process.description}</p>
