@@ -87,7 +87,7 @@ Headings and p .quote {
 }
 
 .creator-logo {
-  @apply w-[100px] lg:w-[180px];
+  @apply w-[120px] lg:w-[180px];
 }
 
 .license {

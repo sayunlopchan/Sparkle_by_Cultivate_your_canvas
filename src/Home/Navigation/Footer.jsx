@@ -54,7 +54,7 @@ const Footer = () => {
   });
 
   return (
-    <div className="footer-container ">
+    <footer className="footer-container ">
       <div className="footer-content-container">
 
         <div className="footer-content">
@@ -73,7 +73,7 @@ const Footer = () => {
             <div className="footer-icon-container ">
               <a href="https://www.facebook.com/sparkle.cyc"><FaFacebook size={30} /></a>
               <a href="https://www.instagram.com/sparkle__kids_academy/"><FaInstagram size={30} /></a>
-              <a href=""><FaWhatsapp size={30} /></a>
+              <a href="https://wa.me/9857049590"><FaWhatsapp size={30} /></a>
             </div>
 
 
@@ -209,7 +209,7 @@ const Footer = () => {
         </div>
         {/*  */}
       </div>
-    </div >
+    </footer >
   );
 };
 

@@ -274,7 +274,7 @@ const Form = () => {
             >
               Address <span className="text-red-500">*</span>
             </label>
-            <textarea
+            <input
               id="address"
               name="address"
               rows="3"

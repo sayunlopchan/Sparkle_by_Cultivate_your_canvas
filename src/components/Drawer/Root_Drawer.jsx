@@ -8,7 +8,7 @@ import logo from '../../assets/logo/Sparkle By CYC.svg';
 const socialLinks = [
   { href: "https://www.facebook.com/sparkle.cyc", icon: <FaFacebook size={30} />, name: "Facebook" },
   { href: "https://www.instagram.com/sparkle__kids_academy/", icon: <FaInstagram size={30} />, name: "Instagram" },
-  { href: "", icon: <FaWhatsapp size={30} />, name: "Whatsapp" }
+  { href: "https://wa.me/9857049590", icon: <FaWhatsapp size={30} />, name: "Whatsapp" }
 ];
 
 const navLinks = [
