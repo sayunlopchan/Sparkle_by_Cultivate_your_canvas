@@ -8,6 +8,11 @@ import img2 from "../../../assets/image/program/dance/dance1.webp";
 import img3 from "../../../assets/image/program/yoga/yoga.webp";
 import img4 from "../../../assets/image/program/art/kid14.webp";
 
+
+// react icons
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
+
 // Slider data
 const SliderData = [
   {
@@ -108,7 +113,13 @@ const Slider = () => {
             {SliderData[currentIndex].title}
           </h2>
           <h3 className="content-h3">-{SliderData[currentIndex].author}</h3>
-          <p className="content-p">{SliderData[currentIndex].description}</p>
+          <span className="flex">
+            <p className="content-p">
+              <span className="font-bold text-xl">"</span>
+              {SliderData[currentIndex].description}
+              <span className="font-bold text-xl">"</span>
+            </p>
+          </span>
         </div>
       </div>
 
