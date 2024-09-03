@@ -101,7 +101,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   className={"footer-link"}
-                  to={'/form'}>
+                  to={'/admissionform'}>
                   Addmission form
                 </NavLink>
               </li>
@@ -165,24 +165,30 @@ const Footer = () => {
                 ) : null}
               </form>
             </div>
-            <ul className="footer-contacts-container">
+            <ul className="footer-contacts-container space-y-2">
               <li className="contact-link">
-                <MdLocationPin size={25} />
-                <a href="https://maps.app.goo.gl/RrrUfgmmvpDQcETF9">Lalitpur-5, Manbhawan</a>
+                <div className="flex gap-2">
+                  <MdLocationPin size={25} />
+                  <a href="https://maps.app.goo.gl/RrrUfgmmvpDQcETF9">Lalitpur-5, Manbhawan</a>
+                </div>
               </li>
 
               <li className="contact-link">
-                <IoMailOutline size={25} />
-                <a href="mailto:sparkle.cyc@gmail.com">sparkle.cyc@gmail.com</a>
+                <div className="flex gap-2">
+                  <IoMailOutline size={25} />
+                  <a href="mailto:sparkle.cyc@gmail.com">sparkle.cyc@gmail.com</a>
+                </div>
               </li>
 
               <li className="contact-link">
-                <BsFillTelephoneForwardFill size={20} />
-                <span className="space-x-1">
-                  <a href="tel:9857049590">9857049590</a>
-                  ,
-                  <a href="tel:01-5409722">01-5409722</a>
-                </span>
+                <div className="flex gap-2 ">
+                  <BsFillTelephoneForwardFill size={20} />
+                  <span className="space-x-1">
+                    <a href="tel:9857049590">9857049590</a>
+                    ,
+                    <a href="tel:01-5409722">01-5409722</a>
+                  </span>
+                </div>
               </li>
             </ul>
           </div>

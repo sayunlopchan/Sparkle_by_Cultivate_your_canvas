@@ -93,9 +93,9 @@ const About = () => {
                 {/* Hover Information */}
                 <div className='text-white p-2 group-hover:cursor-pointer'>
 
-                  <p className='absolute bottom-[10px] opacity-0 group-hover:opacity-100 group-hover:bottom-[37px] text-lg transition-all duration-300 group-hover:delay-100'>{member.fullName}</p>
+                  <p className='absolute bottom-[10px] opacity-0 group-hover:opacity-100 group-hover:bottom-[26px] text-lg transition-all duration-300 group-hover:delay-100'>{member.fullName}</p>
 
-                  <p className='absolute bottom-[-5px] opacity-0 group-hover:opacity-100 group-hover:bottom-[15px] text-sm transition-all group-hover:delay-200 duration-300'>{member.position}</p>
+                  <p className='absolute bottom-[-5px] opacity-0 group-hover:opacity-100 group-hover:bottom-[8px] text-sm transition-all group-hover:delay-200 duration-300'>{member.position}</p>
                 </div>
               </div>
 
