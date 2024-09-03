@@ -16,10 +16,8 @@
 }
 
 body {
-  min-width: 320px;
-  margin: 0px auto;
+  overflow-x: hidden;
 }
-
 /* Card list  */
 
 .p-text {

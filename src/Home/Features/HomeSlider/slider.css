@@ -1,6 +1,6 @@
 /* Slider Container */
 .slider-container {
-  @apply relative h-[100vh] w-[100vw] overflow-hidden bg-gradient-to-tr from-orange-500 to-red-500;
+  @apply relative h-[100vh] w-full  bg-gradient-to-tr from-orange-500 to-red-500;
 }
 
 /* Slider Header */
