@@ -10,7 +10,7 @@ import Introduction from '../Home/Features/introduction/Introduction'
 import GridGallery_2 from '../Home/Features/Gallery_grid/Grid_Gallery_2'
 import WhyChooseUs from '../Home/Features/WhyChooseUs'
 import FAQ from '../Home/Features/FAQ/FAQ'
-import HomePageSkeleton from '../components/skeleton/HomePageSkeleton'
+
 
 
 
