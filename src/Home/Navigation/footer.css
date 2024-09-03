@@ -1,22 +1,14 @@
-Headings and p .quote {
-  @apply font-bold;
-}
-
 .footer-heading {
   @apply font-semibold text-[20px];
 }
 
 /* footer */
 .footer-container {
-  @apply text-white bg-[#ff7f00] py-5;
-}
-
-.footer-content-container {
-  @apply px-10;
+  @apply text-white bg-[#ff7f00] p-5;
 }
 
 .footer-content {
-  @apply w-full grid grid-cols-12 place-items-start gap-[10px];
+  @apply w-full grid grid-cols-12 place-items-start;
 }
 
 /* py all content-item */
@@ -98,12 +90,8 @@ Headings and p .quote {
   @apply text-[12px] md:text-sm;
 }
 
-.newsletter-container {
-  @apply space-y-4;
-}
-
 .newsletter-container form {
-  @apply space-x-2 inline;
+  @apply flex gap-1;
 }
 
 .newsletter-container form .input-box {

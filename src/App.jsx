@@ -6,6 +6,8 @@ import RootLayout from "./Home/RootLayout";
 import Homepage from "./Home/Homepage";
 import GalleySkeleton from "./components/skeleton/GallerySkeleton";
 import LoadingSkeleton from "./components/skeleton/LoadingSkeleton";
+import HomePageSkeleton from "./components/skeleton/HomePageSkeleton";
+
 
 // Lazy load pages
 const About = lazy(() => import("./Home/Page/About"));
@@ -24,7 +26,19 @@ const App = () => {
       path: "/",
       element: <RootLayout />,
       children: [
-        { index: true, element: <Homepage /> },
+        {
+          index: true, element: (
+            <Suspense
+              fallback={
+                <div>
+                  <HomePageSkeleton />
+                </div>
+              }
+            >
+              <Homepage />
+            </Suspense>
+          )
+        },
         {
           path: "about",
           element: (

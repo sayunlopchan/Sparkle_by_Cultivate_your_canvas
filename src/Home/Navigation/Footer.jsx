@@ -54,7 +54,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className="footer-container ">
+    <div className="footer-container ">
       <div className="footer-content-container">
 
         <div className="footer-content">
@@ -73,7 +73,7 @@ const Footer = () => {
             <div className="footer-icon-container ">
               <a href="https://www.facebook.com/sparkle.cyc"><FaFacebook size={30} /></a>
               <a href="https://www.instagram.com/sparkle__kids_academy/"><FaInstagram size={30} /></a>
-              <a href="https://wa.me/9857049590"><FaWhatsapp size={30} /></a>
+              <a href=""><FaWhatsapp size={30} /></a>
             </div>
 
 
@@ -131,19 +131,6 @@ const Footer = () => {
           </div>
 
 
-          {/* map */}
-          <div className="footer-content-item footer-map-container ">
-            <div className="footer-map ">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6204231622387!2d85.31368797459079!3d27.667213176205504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190040550b05%3A0x635c1e5aa56534f8!2sSparkle%20By%20CYC!5e0!3m2!1sen!2snp!4v1724823461460!5m2!1sen!2snp"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-                className="map">
-              </iframe>
-            </div>
-          </div>
-
           {/* news letter */}
           <div className="footer-content-item footer-NandTC-container">
             <div className="newsletter-container">
@@ -152,7 +139,7 @@ const Footer = () => {
                 <input
                   className="input-box"
                   type="text"
-                  placeholder="example@gmail.com"
+                  placeholder="xyz@gmail.com"
                   {...formik.getFieldProps('email')}
                 />
                 <div className="btn-container">
@@ -160,10 +147,10 @@ const Footer = () => {
                     {isDisabled ? 'Subscribe' : 'Subscribe'}
                   </button>
                 </div>
-                {formik.touched.email && formik.errors.email ? (
-                  <div className="text-white">{formik.errors.email}</div>
-                ) : null}
               </form>
+              {formik.touched.email && formik.errors.email ? (
+                <div className="text-white">{formik.errors.email}</div>
+              ) : null}
             </div>
             <ul className="footer-contacts-container space-y-2">
               <li className="contact-link">
@@ -192,6 +179,19 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {/* map */}
+          <div className="footer-content-item footer-map-container ">
+            <div className="footer-map ">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.6204231622387!2d85.31368797459079!3d27.667213176205504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190040550b05%3A0x635c1e5aa56534f8!2sSparkle%20By%20CYC!5e0!3m2!1sen!2snp!4v1724823461460!5m2!1sen!2snp"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                className="map">
+              </iframe>
+            </div>
+          </div>
         </div>
 
 
@@ -209,7 +209,7 @@ const Footer = () => {
         </div>
         {/*  */}
       </div>
-    </footer >
+    </div >
   );
 };
 
