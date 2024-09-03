@@ -199,13 +199,13 @@ const Footer = () => {
         {/*footer-footer */}
         <div className="footer-footer">
           <div className="creator-container">
-            <h2>Powered by</h2>
+            <h2 className="text-sm">Powered by</h2>
             <a href="https://cobrand.com.np" target="_blank">
               <img src={CreaterCompanyLogo} alt="Author Company logo" className="creator-logo" />
             </a>
           </div>
 
-          <p className="license">© Copyright 2024 Cultivate your canvas • All Rights Reserved</p>
+          <p className="license ">© Copyright 2024 Cultivate your canvas • All Rights Reserved</p>
         </div>
         {/*  */}
       </div>

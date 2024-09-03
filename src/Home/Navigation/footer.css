@@ -83,7 +83,7 @@
 }
 
 .license {
-  @apply text-[12px] md:text-lg max-md:order-1;
+  @apply text-sm md:text-lg max-md:order-1;
 }
 
 .newsletter-p {
