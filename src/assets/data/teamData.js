@@ -45,7 +45,7 @@ const teamData = [
     id: 6,
     image: teamMember6,
     fullName: 'Konika Tamang',
-    position: 'Accountant / All rounder',
+    position: 'Accountant',
   },
   {
     id: 7,
