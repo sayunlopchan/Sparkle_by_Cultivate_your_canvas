@@ -12,6 +12,7 @@ import img4 from "../../../assets/image/program/art/kid14.webp";
 // react icons
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 // Slider data
 const SliderData = [
@@ -50,6 +51,9 @@ const SliderData = [
 ];
 
 const Slider = () => {
+  const nav = useNavigate();
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState("slide-in");
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -120,6 +124,13 @@ const Slider = () => {
               <span className="font-bold text-xl">"</span>
             </p>
           </span>
+          <button
+            className="border-2 border-white px-3 py-2 mt-2 hover:backdrop-blur-md transition-all duration-300"
+            onClick={() => nav('/program')}
+          >
+            Read more
+          </button>
+
         </div>
       </div>
 
