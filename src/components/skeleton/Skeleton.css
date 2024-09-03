@@ -1,7 +1,7 @@
 /* loading skeleton */
 
 .loading-container {
-  @apply w-full h-screen space-y-5 py-5 bg-gray-400 overflow-hidden;
+  @apply h-screen w-[100vw] space-y-5 py-5 bg-gray-400 overflow-hidden;
 }
 
 .loading-box-1 {
@@ -29,7 +29,7 @@
 /*  */
 /* gallery loading skeleton  */
 .gallery-skeleton-container {
-  @apply w-full p-10 space-y-10 lg:space-y-20 h-[100vh] overflow-hidden;
+  @apply w-[100vw] p-10 space-y-10 lg:space-y-20 h-[100vh] overflow-hidden;
 }
 .gallery-skeleton-head {
   @apply flex flex-wrap gap-5 lg:gap-10 justify-center;
