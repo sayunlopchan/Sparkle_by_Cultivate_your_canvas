@@ -275,6 +275,7 @@ const Form = () => {
               Address <span className="text-red-500">*</span>
             </label>
             <input
+              type="text"
               id="address"
               name="address"
               rows="3"
