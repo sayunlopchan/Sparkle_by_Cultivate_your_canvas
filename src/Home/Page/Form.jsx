@@ -82,8 +82,8 @@ const Form = () => {
     onSubmit: (values, { resetForm }) => {
       emailjs
         .send(
-          "SparklebyCYC", // Replace with your EmailJS Service ID
-          "template_admissionForm", // Replace with your EmailJS Template ID
+          "sayunlopchan8848", // Replace with your EmailJS Service ID
+          "sayun_template_emailjs", // Replace with your EmailJS Template ID
           {
             fullName: values.fullName,
             parentName: values.parentName,
@@ -93,7 +93,7 @@ const Form = () => {
             gender: values.gender,
             address: values.address,
           },
-          "wOoJP1gd0_16es-iH" // Replace with your EmailJS User ID
+          "tUjJtVIGYiQXSNgKP" // Replace with your EmailJS User ID
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
