@@ -38,15 +38,15 @@ const Contact = () => {
     }),
     onSubmit: (values, { resetForm }) => {
       emailjs.send(
-        'SparklebyCYC', // Replace with your EmailJS Service ID
-        'sparkle_by_cyc_template',  // Replace with your EmailJS Template ID
+        'sayunlopchan8848', // Replace with your EmailJS Service ID
+        'sayun_template_emailjs',  // Replace with your EmailJS Template ID
         {
           fullName: values.fullName,
           email: values.email,
           subject: values.subject,
           message: values.message
         },
-        'wOoJP1gd0_16es-iH' // Replace with your EmailJS User ID
+        'tUjJtVIGYiQXSNgKP' // Replace with your EmailJS User ID
       )
         .then((response) => {
           console.log('SUCCESS!', response.status, response.text);
